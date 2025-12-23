@@ -1,0 +1,282 @@
+TechNova Solutions - Employee Handbook
+Document: Offboarding and Termination Policy
+Last Updated: December 2024
+------------------------------------------------------------
+
+1. Offboarding and Termination Policy
+
+1.1 Overview
+This policy outlines the procedures for team member departures from TechNova Solutions, whether voluntary or involuntary. Our goal is to ensure a smooth transition for departing team members while protecting company interests.
+
+1.2 Offboarding Philosophy
+TechNova strives to make every departure respectful and professional. We aim to:
+- Treat departing team members with dignity
+- Ensure proper knowledge transfer
+- Maintain positive relationships with alumni
+- Protect company assets and information
+- Comply with all legal requirements
+
+2. Voluntary Terminations (Resignations)
+
+2.1 Resignation Notice
+Team members who choose to leave TechNova should:
+- Provide written notice to their manager
+- Standard notice period is 2 weeks
+- Manager and director roles: 4 weeks notice recommended
+- Submit resignation through Workday
+
+2.2 Resignation Process
+Steps for resigning team members:
+1. Speak with your manager before submitting formal resignation
+2. Submit resignation in Workday with your last day of work
+3. Work with manager on transition and handoff plan
+4. Complete exit checklist provided by HR
+5. Participate in exit interview (optional but encouraged)
+6. Return all company property
+
+2.3 Notice Period Expectations
+During your notice period:
+- Continue to fulfill job responsibilities professionally
+- Document ongoing projects and processes
+- Train replacements or team members on your duties
+- Complete knowledge transfer sessions
+- Tie up loose ends on current projects
+
+2.4 Manager Responsibilities
+When a team member resigns, managers should:
+- Accept the resignation professionally
+- Discuss transition timeline and priorities
+- Create a handoff plan
+- Communicate departure to stakeholders (with employee input)
+- Ensure access is revoked on the last day
+- Complete manager offboarding checklist
+
+3. Involuntary Terminations
+
+3.1 Types of Involuntary Termination
+Involuntary terminations may occur due to:
+- Performance issues after documented coaching
+- Policy or conduct violations
+- Position elimination or restructuring
+- End of contract or temporary assignment
+- Failure to meet job requirements
+
+3.2 Performance-Based Termination
+Before termination for performance:
+- Team member placed on Performance Improvement Plan (PIP)
+- Clear expectations and timeline documented
+- Regular check-ins during improvement period
+- Final decision made by manager, HR, and leadership
+- Documentation maintained throughout process
+
+3.3 Termination for Cause
+Immediate termination may occur for:
+- Gross misconduct or violence
+- Theft or fraud
+- Harassment or discrimination
+- Violation of confidentiality agreements
+- Illegal activity
+- Falsification of records
+
+3.4 Position Elimination
+When positions are eliminated:
+- Affected team members notified as soon as possible
+- Severance provided according to company policy
+- Outplacement support offered
+- COBRA and benefits information provided
+- References provided for future employment
+
+4. Offboarding Process
+
+4.1 Offboarding Checklist
+HR initiates offboarding which includes:
+
+Before Last Day:
+- Final paycheck calculation prepared
+- Benefits continuation information prepared
+- IT notified for access termination
+- Equipment return arranged
+- Exit interview scheduled (if desired)
+
+On Last Day:
+- All system access revoked
+- Badge and physical access deactivated
+- Final walkthrough with manager
+- Equipment collected
+- Personal items collected
+
+4.2 Knowledge Transfer
+Departing team members should:
+- Document all ongoing projects and their status
+- Provide passwords and access information (via secure channels)
+- Introduce replacement to key contacts
+- Create handoff documentation
+- Complete final status updates
+
+4.3 Company Property Return
+Team members must return:
+- Laptop and charger
+- Mobile devices and accessories
+- Office keys and access badges
+- Credit cards and expense accounts
+- Physical documents and files
+- Any other company property
+
+For remote workers:
+- Prepaid shipping label provided for equipment
+- Equipment must be shipped within 5 business days
+- Failure to return may result in payroll deduction
+
+5. Final Pay and Benefits
+
+5.1 Final Paycheck
+Final pay includes:
+- All wages through last day of work
+- Accrued but unused vacation (where required by law)
+- Any outstanding expense reimbursements
+- Commission or bonus per applicable plans
+
+Timing of final pay:
+- Voluntary resignation: Next regular payday
+- Involuntary termination: Within 72 hours or as required by state law
+- California employees: Final pay on last day of work
+
+5.2 Benefits Continuation
+Upon termination:
+- Health insurance: Coverage ends last day of month
+- COBRA: Information mailed within 14 days
+- 401(k): Account remains yours; options provided
+- Life insurance: Conversion options available
+- FSA/HSA: Spending deadline information provided
+
+5.3 Severance
+
+Eligibility:
+Severance may be provided for:
+- Position eliminations (layoffs)
+- Restructuring-related terminations
+- At company discretion for other separations
+
+Severance is generally NOT provided for:
+- Voluntary resignations
+- Termination for cause or misconduct
+- Performance-based terminations
+
+Severance Package (when applicable):
+- 1 week of pay per year of service (minimum 2 weeks)
+- COBRA subsidy for equivalent period
+- Outplacement services
+- Requires signing separation agreement
+
+6. Exit Interviews
+
+6.1 Purpose
+Exit interviews help TechNova:
+- Understand reasons for departure
+- Identify areas for improvement
+- Gather feedback on management and culture
+- Maintain positive alumni relationships
+
+6.2 Process
+Exit interviews are:
+- Voluntary but strongly encouraged
+- Conducted by HR (not departing team member's manager)
+- Confidential and constructive
+- Used for aggregate trend analysis
+- Scheduled during the final week
+
+6.3 Topics Covered
+Exit interviews may discuss:
+- Reasons for leaving
+- Job satisfaction and challenges
+- Management and team dynamics
+- Company culture and values
+- Suggestions for improvement
+- Likelihood of recommending TechNova
+
+7. System Access Termination
+
+7.1 Access Revocation Timeline
+Access is revoked according to this schedule:
+- Email and Slack: End of last working day
+- Code repositories: End of last working day
+- Customer systems: Before last working day
+- Building access: End of last working day
+- VPN and internal systems: End of last working day
+
+7.2 Data Handling
+Before departure:
+- Personal files may be exported from company drives
+- Work files must remain accessible to team
+- Email forwarding set up if needed
+- Customer contacts transitioned to new owner
+
+8. Rehire Eligibility
+
+8.1 Eligibility Status
+Departing team members are marked as:
+- Eligible for rehire: Left in good standing
+- Not eligible for rehire: Termination for cause
+- Eligible with conditions: Case-by-case review needed
+
+8.2 Rehire Process
+Former team members who wish to return:
+- Apply through standard hiring process
+- Previous manager may be consulted
+- Previous tenure does not guarantee rehire
+- If rehired, treated as new employee for benefits
+
+9. References
+
+9.1 Reference Policy
+TechNova provides employment verification including:
+- Dates of employment
+- Position(s) held
+- Rehire eligibility status
+
+Additional references:
+- Managers may provide personal references
+- Personal references are voluntary
+- Must use personal contact information, not company
+- Cannot share confidential HR information
+
+10. Communication of Departure
+
+10.1 Internal Communication
+Departures are communicated:
+- Team: Manager informs direct team members
+- Department: Department head sends broader communication
+- Company: Significant departures may warrant company-wide notice
+- Timing coordinated with departing team member
+
+10.2 External Communication
+For customer-facing roles:
+- Customer contacts transitioned before departure
+- Messaging coordinated with departing team member
+- New point of contact clearly communicated
+- No disparagement of departing team member
+
+11. Special Circumstances
+
+11.1 Death of Team Member
+In case of team member death:
+- Benefits paid to designated beneficiaries
+- Final pay to estate or designated person
+- Personal effects returned to family
+- Memorial tribute coordinated with family input
+
+11.2 Retirement
+For team members retiring:
+- Celebration/recognition event offered
+- Extended transition period when possible
+- Consulting arrangement may be offered
+- Alumni network access provided
+
+12. Contact Information
+
+Offboarding Questions: hr@technova.com
+Final Pay Issues: payroll@technova.com
+Benefits/COBRA: benefits@technova.com
+IT Equipment Return: it@technova.com
+Exit Interviews: Schedule through HR portal
+

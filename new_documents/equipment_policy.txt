@@ -1,0 +1,305 @@
+TechNova Solutions - Employee Handbook
+Document: Company Equipment and Technology Policy
+Last Updated: December 2024
+------------------------------------------------------------
+
+1. Equipment Policy Overview
+
+1.1 Purpose
+This policy outlines the guidelines for the use, care, and return of company-provided equipment and technology. TechNova provides equipment to enable team members to perform their jobs effectively while maintaining security and accountability.
+
+1.2 Scope
+This policy applies to:
+- All company-owned hardware (laptops, monitors, phones)
+- Software and subscriptions
+- Office equipment and furniture (if applicable)
+- Any technology assets provided by TechNova
+
+2. Equipment Provided
+
+2.1 Standard Equipment
+New team members receive:
+
+Laptop:
+- Choice of Mac (MacBook Pro) or Windows (Dell XPS/Lenovo ThinkPad)
+- Refreshed every 3-4 years or as needed
+- Includes charger and necessary adapters
+
+Accessories (as needed):
+- External monitor for remote workers
+- Keyboard and mouse
+- Webcam and headset
+- Laptop stand
+
+2.2 Role-Specific Equipment
+Some roles receive additional equipment:
+- Engineers: Second monitor, ergonomic accessories
+- Sales: Mobile phone or phone stipend
+- Design: Tablet, drawing equipment
+- Executive: Premium communication equipment
+
+2.3 Requesting Equipment
+To request equipment:
+1. Submit request through IT portal
+2. Provide business justification
+3. Manager approval required for non-standard items
+4. IT will review and fulfill approved requests
+
+3. Home Office Setup
+
+3.1 Home Office Stipend
+Remote team members receive:
+- One-time stipend: $1,000 for home office setup
+- Eligible expenses: Desk, chair, lighting, accessories
+- Submit receipts through expense system
+- Must be used within first 6 months
+
+3.2 Recommended Setup
+We recommend:
+- Ergonomic chair with lumbar support
+- Desk at proper height
+- External monitor at eye level
+- Good lighting for video calls
+- Quiet space for focused work
+
+3.3 Ergonomic Assessment
+Request an ergonomic assessment:
+- Available to all team members
+- Virtual or in-person options
+- Recommendations for improvements
+- Contact: ergonomics@technova.com
+
+4. Equipment Care and Use
+
+4.1 General Care
+Take care of company equipment:
+- Handle devices carefully
+- Keep equipment clean
+- Store securely when not in use
+- Avoid extreme temperatures
+- Don't leave in vehicles unattended
+
+4.2 Acceptable Use
+Company equipment may be used for:
+- Work-related tasks
+- Reasonable personal use (limited)
+- Professional development
+
+4.3 Prohibited Use
+Company equipment may NOT be used for:
+- Illegal activities
+- Running personal businesses
+- Cryptocurrency mining
+- Excessive personal use
+- Unauthorized software installation
+- Sharing with non-employees
+
+4.4 Software Installation
+Software guidelines:
+- Only approved software may be installed
+- Request new software through IT portal
+- IT will review for security and licensing
+- Some software pre-approved (see list in IT portal)
+
+5. Security Requirements
+
+5.1 Device Security
+All company devices must:
+- Have full disk encryption enabled
+- Be enrolled in Mobile Device Management (MDM)
+- Have automatic updates enabled
+- Run approved endpoint protection
+- Be password protected
+
+5.2 Password Requirements
+For device access:
+- Strong password or PIN required
+- Biometric authentication encouraged
+- Auto-lock after 5 minutes of inactivity
+- Never share login credentials
+
+5.3 Data Protection
+Protect company data:
+- Store work files in approved cloud storage
+- Don't store sensitive data on local drives
+- Use VPN when on public networks
+- Report any security incidents immediately
+
+5.4 Lost or Stolen Devices
+If equipment is lost or stolen:
+1. Report immediately to IT: it@technova.com
+2. Call 24/7 security line for urgent situations
+3. IT will remotely wipe the device
+4. File police report if stolen
+5. Complete incident report
+
+6. Maintenance and Support
+
+6.1 IT Support
+Get help with equipment:
+- Slack: #it-help
+- Email: it@technova.com
+- Phone: For urgent issues only
+- Hours: Follow the sun support (24/5)
+
+6.2 Repairs
+When equipment needs repair:
+- Report issues to IT immediately
+- IT will troubleshoot remotely first
+- Hardware repairs arranged by IT
+- Loaner equipment available if needed
+- Don't attempt unauthorized repairs
+
+6.3 Replacement
+Equipment replacement:
+- Damaged equipment: Report to IT for replacement
+- Aging equipment: Refreshed every 3-4 years
+- Lost equipment: Report immediately; replacement provided
+- Theft: Police report required for replacement
+
+7. Personal Devices
+
+7.1 Bring Your Own Device (BYOD)
+Using personal devices for work:
+- Requires manager and IT approval
+- MDM profile must be installed
+- Minimum security requirements apply
+- Company data remotely wipeable
+- Not required – company provides equipment
+
+7.2 BYOD Security
+Personal devices used for work must:
+- Have current operating system
+- Have screen lock enabled
+- Be free of malware
+- Meet minimum security standards
+- Be reported if lost/stolen
+
+7.3 Mobile Phones
+For work use on personal phones:
+- Slack and email apps permitted
+- $50/month stipend available
+- Enable security features
+- Work data can be remotely wiped
+
+8. Software and Licensing
+
+8.1 Approved Software
+Pre-approved software includes:
+- Google Workspace (email, docs, etc.)
+- Slack
+- Zoom
+- 1Password
+- Standard development tools (engineering)
+- Role-specific tools (per department)
+
+8.2 Requesting New Software
+To request new software:
+1. Submit request in IT portal
+2. Provide business justification
+3. IT reviews for security and compatibility
+4. Procurement handles licensing
+5. IT installs and configures
+
+8.3 Licensing Compliance
+Regarding software licenses:
+- Use only licensed software
+- Don't share license keys
+- Report any licensing concerns
+- Unauthorized software will be removed
+
+9. Equipment Return
+
+9.1 When to Return
+Return equipment when:
+- Leaving TechNova (any reason)
+- Upgrading to new equipment
+- Equipment is no longer needed
+- Transitioning to a different role
+
+9.2 Return Process
+For departing team members:
+- IT will provide prepaid shipping label
+- Package equipment securely
+- Include all accessories and chargers
+- Ship within 5 business days of last day
+- Confirm tracking with IT
+
+9.3 Data Wiping
+Before returning equipment:
+- Back up any personal files (if applicable)
+- IT will securely wipe all data
+- Factory reset performed
+- Equipment redeployed or recycled
+
+9.4 Failure to Return
+If equipment is not returned:
+- Reminder sent after 5 business days
+- Escalation after 10 business days
+- Cost may be deducted from final pay
+- Legal action for unreturned equipment
+
+10. Privacy Considerations
+
+10.1 Company Access
+TechNova may access:
+- Company-owned devices
+- Work files and communications
+- Activity logs on company systems
+- Device location (for security purposes)
+
+10.2 Personal Privacy
+Regarding personal use:
+- Limited personal use is permitted
+- Personal files may be on company devices
+- Recommend keeping personal files separate
+- All data on company devices may be accessed
+
+10.3 Monitoring
+Company equipment may be monitored for:
+- Security threats
+- Policy compliance
+- Legal requirements
+- Performance of IT systems
+
+11. Environmental Responsibility
+
+11.1 E-Waste
+Responsible disposal:
+- Don't throw electronics in regular trash
+- Return old equipment to TechNova
+- We recycle through certified partners
+- Data securely destroyed before recycling
+
+11.2 Sustainability
+Our sustainability efforts:
+- Energy-efficient equipment selections
+- Extended equipment lifecycle when possible
+- Donation of usable equipment
+- Recycling of all e-waste
+
+12. Policy Violations
+
+12.1 Consequences
+Violations may result in:
+- Verbal or written warning
+- Loss of equipment privileges
+- Required training
+- Disciplinary action
+- Termination for serious violations
+
+12.2 Reporting Violations
+Report policy violations:
+- To IT for technical issues
+- To HR for behavioral concerns
+- Anonymous reporting available
+
+13. Contact Information
+
+IT Support: it@technova.com
+IT Help Slack: #it-help
+Equipment Requests: IT portal
+Security Incidents: security@technova.com
+24/7 Security Line: 1-800-TECH-SEC
+Ergonomics: ergonomics@technova.com
+

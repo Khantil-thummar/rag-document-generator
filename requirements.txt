@@ -1,0 +1,19 @@
+# FastAPI and server
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# OpenAI
+openai==1.58.1
+
+# Qdrant vector database
+qdrant-client==1.12.1
+
+# Utilities
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-dotenv==1.0.1
+
+# Text processing
+tiktoken==0.8.0
+

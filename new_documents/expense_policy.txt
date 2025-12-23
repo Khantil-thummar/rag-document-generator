@@ -1,0 +1,195 @@
+TechNova Solutions - Employee Handbook
+Document: Travel and Expense Policy
+Last Updated: December 2024
+------------------------------------------------------------
+
+1. Travel and Expense Policy
+
+1.1 Policy Purpose
+TechNova Solutions' Travel and Expense Policy provides guidance to all team members to ensure responsible spending of company resources. This policy aims to:
+- Provide clear guidelines for reimbursable business expenses
+- Ensure efficient use of company funds
+- Maintain transparency in business-related spending
+- Prevent misuse of company resources
+- Comply with tax and legal requirements
+
+1.2 General Principles
+All team members are expected to:
+- Exercise good judgment when incurring business expenses
+- Spend company money as if it were their own
+- Choose cost-effective options without sacrificing quality or safety
+- Submit accurate and timely expense reports
+- Retain all receipts for expenses over $25
+
+1.3 Expense Submission Process
+
+1.3.1 Expense Reporting System
+All expenses must be submitted through Expensify, our expense management platform.
+
+1.3.2 Submission Requirements
+- Submit expenses within 30 days of incurring them
+- Include itemized receipts for all expenses over $25
+- Provide clear descriptions explaining the business purpose
+- Categorize expenses correctly
+- Tag expenses to appropriate projects or cost centers
+
+1.3.3 Approval Workflow
+- Expenses under $500: Manager approval required
+- Expenses $500-$2,000: Manager and Finance approval required
+- Expenses over $2,000: VP approval required
+- All international travel: Pre-approval required from department head
+
+1.4 Travel Expenses
+
+1.4.1 Air Travel
+- Book flights at least 14 days in advance when possible
+- Economy class is standard for flights under 6 hours
+- Premium economy permitted for flights over 6 hours
+- Business class requires VP approval and is limited to flights over 8 hours
+- Use the company's preferred booking platform (TravelPerk) for best rates
+- Personal frequent flyer miles may be kept by the traveler
+
+1.4.2 Ground Transportation
+- Rental cars: Intermediate class or below; book through TravelPerk
+- Rideshare (Uber/Lyft): Permitted for business travel; avoid premium services
+- Personal vehicle: Reimbursed at IRS standard mileage rate (currently $0.67/mile)
+- Public transit: Fully reimbursable with receipts
+- Parking: Reimbursable at airports and business destinations
+
+1.4.3 Lodging
+- Maximum nightly rate: $250 in standard markets, $350 in high-cost cities
+- High-cost cities include: New York, San Francisco, London, Tokyo, Singapore
+- Book through TravelPerk for corporate rates
+- Incidentals (mini-bar, movies) are not reimbursable
+- Room cancellations must be made 24 hours in advance to avoid charges
+
+1.4.4 Meals During Travel
+Daily meal per diem rates:
+- Domestic travel: $75 per day
+- International travel: $100 per day
+- Per diem covers breakfast, lunch, dinner, and tips
+- Alcohol is not covered by per diem and must be expensed separately (see 1.5)
+
+1.5 Client Entertainment and Meals
+
+1.5.1 Client Meals
+- Reasonable meal expenses with clients are reimbursable
+- Maximum per person: $100 for dinner, $50 for lunch, $30 for breakfast
+- Must document attendees and business purpose
+- Pre-approval required for groups larger than 6 people
+
+1.5.2 Alcohol Policy
+- Moderate alcohol with client meals is permitted
+- Maximum 2 drinks per person
+- Alcohol at internal team events requires department head approval
+- Never expense alcohol consumed alone
+
+1.5.3 Entertainment
+- Client entertainment (sporting events, shows) requires pre-approval
+- Maximum $200 per person per event
+- Must have clear business justification
+- Gift cards for clients are not permitted as expenses
+
+1.6 Remote Work Expenses
+
+1.6.1 Home Office Equipment
+One-time home office setup stipend: $1,000
+Eligible expenses include:
+- Desk and ergonomic chair
+- Monitor and accessories
+- Keyboard, mouse, webcam
+- Lighting equipment
+- Noise-canceling headphones
+
+1.6.2 Ongoing Remote Work Expenses
+Monthly reimbursable expenses:
+- Internet: Up to $75/month
+- Phone plan (if used for work): Up to $50/month
+- Co-working space: Up to $300/month
+
+1.7 Professional Development
+
+1.7.1 Training and Conferences
+- Annual professional development budget: $2,000 per team member
+- Conferences require manager approval
+- Registration, travel, and lodging covered within budget
+- Unused budget does not roll over to next year
+
+1.7.2 Books and Subscriptions
+- Work-related books: Fully reimbursable
+- Professional subscriptions: Reimbursable with manager approval
+- Online courses: Covered under professional development budget
+
+1.8 Office Supplies and Equipment
+
+1.8.1 Office Supplies
+- Standard office supplies: Order through company procurement portal
+- Emergency purchases: Reimbursable up to $50 without pre-approval
+- Larger purchases require procurement process
+
+1.8.2 Software and Tools
+- All software must be requested through IT
+- Personal software subscriptions require manager and IT approval
+- SaaS tools must go through security review before purchase
+
+1.9 Team Events and Celebrations
+
+1.9.1 Team Meals
+- Team lunch/dinner budget: $50 per person
+- Quarterly team events: $100 per person
+- Manager approval required for all team events
+- Include list of attendees in expense report
+
+1.9.2 Celebrations
+- Birthday celebrations: $25 per person limit
+- Work anniversaries: $50 per person limit
+- Baby showers/weddings: Coordinate with HR for company contribution
+
+1.10 Non-Reimbursable Expenses
+The following are NOT reimbursable:
+- Personal travel or vacation expenses
+- Traffic tickets, parking violations, or legal fines
+- Personal grooming or clothing (unless safety equipment)
+- Gym memberships or personal fitness
+- Child care or pet care during travel
+- Spouse/partner travel expenses
+- Political or religious contributions
+- Personal credit card interest or late fees
+- Lost or stolen personal items
+
+1.11 Expense Report Deadlines
+- Submit all expenses within 30 days of incurring them
+- Quarter-end deadline: All expenses must be submitted by the 5th of the following month
+- Late submissions may be rejected or require additional approval
+- End-of-year deadline: December 31st expenses due by January 10th
+
+1.12 Receipt Requirements
+Receipts must show:
+- Vendor name and address
+- Date of purchase
+- Itemized list of goods/services
+- Total amount including tax
+- Payment method
+
+Acceptable receipt formats:
+- Original paper receipts (photographed or scanned)
+- Digital receipts forwarded to receipts@expensify.com
+- Credit card statements are NOT acceptable as sole documentation
+
+1.13 Currency and Exchange Rates
+- Expenses in foreign currency will be converted at the exchange rate on the date of expense
+- Use company credit card for international expenses when possible
+- Document exchange rate if paying with personal funds
+
+1.14 Compliance and Auditing
+- All expense reports are subject to random auditing
+- Fraudulent expense claims will result in disciplinary action, up to termination
+- Repeated policy violations may result in loss of expense privileges
+- Questions about policy should be directed to finance@technova.com
+
+1.15 Contact Information
+- Expense Support: expenses@technova.com
+- Travel Booking: travel@technova.com
+- Finance Questions: finance@technova.com
+- Policy Exceptions: Submit request through HR portal
+

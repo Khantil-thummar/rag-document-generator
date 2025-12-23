@@ -1,0 +1,102 @@
+TechNova Solutions - Employee Handbook
+Document: Remote Work Policy
+Last Updated: December 2024
+------------------------------------------------------------
+
+1. Remote Work Policy
+
+1.1 Overview
+TechNova Solutions embraces a flexible, remote-first work culture. We believe that team members can be productive and collaborative from anywhere in the world. This policy outlines the guidelines and expectations for remote work at TechNova.
+
+1.2 Remote Work Philosophy
+At TechNova, we trust our team members to manage their time effectively and deliver results regardless of their physical location. Our remote-first approach enables us to:
+- Attract top talent from around the world
+- Promote work-life balance and employee well-being
+- Reduce environmental impact through less commuting
+- Enable flexible schedules that accommodate diverse lifestyles
+- Create an inclusive environment for caregivers and those with mobility challenges
+
+1.3 Eligibility
+All TechNova team members are eligible for remote work unless their specific role requires on-site presence. Roles that may require office attendance include:
+- Positions requiring specialized equipment only available on-site
+- Roles with significant in-person client interaction requirements
+- Positions designated as essential on-site personnel
+
+1.4 Remote Work Requirements
+To work remotely at TechNova, team members must:
+- Have a dedicated, quiet workspace suitable for professional work
+- Maintain reliable high-speed internet connection (minimum 50 Mbps recommended)
+- Be available during core collaboration hours (10 AM - 3 PM in your local timezone)
+- Respond to messages and requests within a reasonable timeframe during work hours
+- Maintain professional appearance and background for video calls
+- Ensure the security of company data and equipment
+
+1.5 Communication Expectations
+Effective communication is essential for remote teams. Team members should:
+- Use Slack for day-to-day communication and quick questions
+- Use email for formal communications and external correspondence
+- Schedule video calls for complex discussions and team meetings
+- Update their calendar with availability and time off
+- Set status messages when unavailable or in focus time
+- Attend all required team meetings and company all-hands
+
+1.6 Asynchronous Work
+TechNova encourages asynchronous communication to accommodate team members across different time zones:
+- Document decisions and discussions in writing for those not present
+- Record important meetings for team members who cannot attend live
+- Use collaborative tools like Notion and Google Docs for shared work
+- Avoid expecting immediate responses outside of core hours
+- Respect colleagues' time zones when scheduling meetings
+
+1.7 Home Office Setup
+TechNova provides support for your home office setup:
+- One-time home office stipend of $1,000 for equipment and furniture
+- Monthly internet reimbursement up to $75
+- Ergonomic equipment recommendations and discounts
+- IT support for home network and equipment issues
+
+1.8 Co-working Spaces
+Team members may use co-working spaces as an alternative to working from home:
+- Monthly co-working stipend up to $300 for approved spaces
+- Submit receipts through the expense system for reimbursement
+- Ensure co-working space meets security requirements for company work
+
+1.9 In-Person Gatherings
+While we are remote-first, TechNova values in-person connection:
+- Annual company retreat for all team members (travel covered by company)
+- Quarterly team offsites for larger teams
+- Optional regional meetups for local team members
+- Client meetings as needed with travel expenses covered
+
+1.10 Performance Expectations
+Remote work does not change performance expectations:
+- Team members are evaluated on results and outcomes, not hours logged
+- Regular check-ins with managers to discuss progress and blockers
+- Clear goals and deliverables established through OKRs
+- Transparent communication about workload and capacity
+
+1.11 Security Requirements
+Working remotely requires additional attention to security:
+- Use company-provided VPN when accessing sensitive systems
+- Never work from public WiFi without VPN protection
+- Keep work devices secured and password-protected
+- Do not share login credentials with family members
+- Report any security incidents immediately to IT
+
+1.12 International Remote Work
+Team members wishing to work from a different country temporarily must:
+- Notify HR at least 30 days in advance for stays longer than 2 weeks
+- Ensure compliance with visa and tax requirements
+- Maintain overlap with team during core hours when possible
+- Confirm reliable internet and workspace availability
+
+1.13 Hybrid Options
+For team members near a TechNova office location, hybrid arrangements are available:
+- Access to office space on any work day
+- Hot-desking available on first-come basis
+- Reserved desks available for those attending regularly
+- Meeting rooms bookable through the office management system
+
+1.14 Policy Review
+This remote work policy is reviewed annually. Feedback and suggestions can be submitted to hr@technova.com.
+

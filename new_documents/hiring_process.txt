@@ -1,0 +1,215 @@
+TechNova Solutions - Employee Handbook
+Document: Hiring and Talent Acquisition
+Last Updated: December 2024
+------------------------------------------------------------
+
+1. Talent Acquisition at TechNova
+
+1.1 Our Hiring Philosophy
+At TechNova Solutions, we believe that our people are our greatest asset. Our hiring process is designed to identify talented individuals who align with our values, bring diverse perspectives, and can contribute to our mission of building innovative technology solutions.
+
+1.2 Talent Acquisition Mission
+Our Talent Acquisition team is committed to:
+- Building diverse, high-performing teams across all departments
+- Creating an exceptional candidate experience
+- Maintaining fair and equitable hiring practices
+- Partnering with hiring managers to find the best talent
+- Continuously improving our hiring processes
+
+2. The Hiring Process
+
+2.1 Job Requisition
+Before any role is posted:
+- Hiring manager submits a job requisition through Workday
+- Finance approves the headcount and budget
+- Talent Acquisition reviews and refines the job description
+- Compensation team ensures pay bands are current and competitive
+
+2.2 Job Posting
+Open positions are posted on:
+- TechNova Careers page (careers.technova.com)
+- LinkedIn, Indeed, and Glassdoor
+- Specialized job boards for specific roles
+- Internal job board for current employees
+
+All positions remain open for a minimum of 5 business days to ensure fair access.
+
+2.3 Sourcing Candidates
+We source candidates through:
+- Inbound applications from job postings
+- Employee referrals (see referral program below)
+- Direct sourcing by recruiters
+- University recruiting programs
+- Diversity-focused recruiting partnerships
+- Professional conferences and events
+
+3. Interview Process
+
+3.1 Interview Stages
+Our standard interview process includes:
+
+Stage 1: Recruiter Screen (30 minutes)
+- Initial conversation to assess interest and basic qualifications
+- Overview of the role and TechNova culture
+- Salary expectations discussion
+- Timeline and process overview
+
+Stage 2: Hiring Manager Interview (45-60 minutes)
+- Deep dive into experience and qualifications
+- Discussion of role expectations and team dynamics
+- Technical or functional assessment as appropriate
+
+Stage 3: Team Interviews (2-4 hours)
+- Panel interviews with potential teammates
+- Technical assessment or work sample (role-dependent)
+- Values and culture fit discussions
+- Cross-functional stakeholder interviews if applicable
+
+Stage 4: Final Interview (30-45 minutes)
+- Meeting with department head or executive sponsor
+- Opportunity for candidate questions
+- Final assessment of mutual fit
+
+3.2 Interview Best Practices
+All interviewers are expected to:
+- Complete unconscious bias training before interviewing
+- Use structured interview guides with consistent questions
+- Evaluate candidates against defined criteria, not gut feelings
+- Submit feedback within 24 hours of the interview
+- Maintain confidentiality about candidate information
+
+3.3 Technical Assessments
+For technical roles, assessments may include:
+- Take-home coding challenges (2-4 hours maximum)
+- Live coding sessions with pair programming
+- System design discussions
+- Portfolio or work sample reviews
+
+We respect candidates' time and limit assessments to reasonable durations.
+
+4. Candidate Experience
+
+4.1 Communication Standards
+We commit to:
+- Acknowledging all applications within 48 hours
+- Providing recruiter feedback within 5 business days of screen
+- Updating candidates on their status at least weekly during active process
+- Delivering offer or rejection decisions within 48 hours of final interview
+
+4.2 Candidate Resources
+Candidates have access to:
+- Interview prep materials and company information
+- Contact information for their recruiter
+- Accommodation requests process
+- Feedback on their interview performance (upon request)
+
+4.3 Accommodations
+TechNova provides reasonable accommodations for candidates with disabilities:
+- Accessible interview locations and video platforms
+- Extended time for assessments when needed
+- Sign language interpreters or captioning
+- Alternative format materials
+
+Request accommodations by emailing recruiting@technova.com.
+
+5. Employee Referral Program
+
+5.1 Referral Bonus Structure
+We offer competitive referral bonuses:
+- Individual Contributor roles: $2,500
+- Manager/Senior Individual Contributor roles: $5,000
+- Director+ roles: $7,500
+- Executive roles: $10,000
+
+5.2 Referral Process
+To submit a referral:
+1. Log into the referral portal at referrals.technova.com
+2. Enter the candidate's name, email, and resume
+3. Select the position(s) they're qualified for
+4. Track your referral's progress in the portal
+
+5.3 Referral Eligibility
+- All employees are eligible except HR and hiring managers for their own roles
+- Referred candidates must be hired and complete 90 days of employment
+- Bonus is paid in the paycheck following the 90-day milestone
+- There is no limit to the number of referrals you can make
+
+6. Hiring Decisions
+
+6.1 Decision Making
+Hiring decisions are made collaboratively:
+- All interviewers submit written feedback
+- Debrief meeting held with interview panel
+- Hiring manager makes final recommendation
+- HR reviews for equity and compliance
+- Offer extended pending background check
+
+6.2 Background Checks
+All offers are contingent on successful completion of:
+- Criminal background check
+- Employment verification
+- Education verification (if degree required)
+- Reference checks (3 professional references)
+
+6.3 Offer Process
+Once approved:
+- Recruiter extends verbal offer to candidate
+- Written offer letter sent via DocuSign
+- Candidate has 5 business days to respond
+- Negotiations handled by Talent Acquisition with hiring manager input
+
+7. Hiring Manager Resources
+
+7.1 Manager Responsibilities
+Hiring managers are responsible for:
+- Writing accurate, inclusive job descriptions
+- Providing timely interview feedback
+- Participating in recruiter strategy meetings
+- Making prompt hiring decisions
+- Welcoming and onboarding new hires
+
+7.2 Available Training
+Hiring managers should complete:
+- Interviewing Skills workshop
+- Unconscious Bias in Hiring training
+- Job Description Writing guide
+- Legal Compliance in Hiring module
+
+8. Diversity in Hiring
+
+8.1 Our Commitment
+TechNova is committed to building a diverse workforce:
+- Diverse candidate slates for all roles
+- Structured interviews to reduce bias
+- Diverse interview panels
+- Partnerships with diversity-focused organizations
+- Regular analysis of hiring funnel by demographics
+
+8.2 Inclusive Practices
+We implement inclusive hiring practices including:
+- Removing identifying information from initial resume review
+- Using gender-neutral language in job descriptions
+- Evaluating for skills and potential, not just pedigree
+- Considering non-traditional backgrounds and career paths
+
+9. Internal Mobility
+
+9.1 Internal Candidates
+Current employees are encouraged to apply for open positions:
+- All positions posted internally for at least 5 days
+- Internal candidates follow standard interview process
+- No requirement to inform current manager before applying
+- Internal moves typically have 2-4 week transition period
+
+9.2 Manager Notification
+- Hiring manager will notify current manager after offer acceptance
+- Current manager cannot block approved internal moves
+- Teams should work together on transition planning
+
+10. Contact Information
+
+Talent Acquisition Team: recruiting@technova.com
+Referral Questions: referrals@technova.com
+Accommodation Requests: recruiting@technova.com
+Careers Page: careers.technova.com
+

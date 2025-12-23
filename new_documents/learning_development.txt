@@ -1,0 +1,296 @@
+TechNova Solutions - Employee Handbook
+Document: Learning and Development Policy
+Last Updated: December 2024
+------------------------------------------------------------
+
+1. Learning and Development at TechNova
+
+1.1 Our Philosophy
+TechNova Solutions believes that continuous learning is essential for both individual success and organizational growth. We invest in our team members' development because skilled, engaged employees create better products and drive business results.
+
+1.2 L&D Mission
+Our Learning and Development mission is to:
+- Empower team members to grow their skills and careers
+- Provide accessible learning opportunities for all
+- Build capabilities aligned with business objectives
+- Foster a culture of continuous improvement
+- Support both technical and professional development
+
+1.3 L&D Vision
+We aspire to be recognized as a top organization for employee development, where:
+- Every team member has a personalized development path
+- Learning is integrated into daily work
+- Skills development leads to career advancement
+- Innovation is fueled by continuous learning
+
+2. Learning Opportunities
+
+2.1 Self-Directed Learning
+Team members have access to:
+
+Learning Platforms:
+- LinkedIn Learning: Full library access for all team members
+- Udemy Business: Technical and business courses
+- Coursera for Business: University-level courses and certificates
+- O'Reilly Learning: Technical books, videos, and labs
+- Pluralsight: Technology skills platform (engineering teams)
+
+Usage Guidelines:
+- Learning time counts as work time
+- Aim for 2-4 hours of learning per month
+- Share learnings with your team
+- Track completed courses in your development profile
+
+2.2 Instructor-Led Training
+We offer live training programs including:
+
+Internal Programs:
+- New Manager Essentials (required for new managers)
+- Leadership Development Program (director+)
+- Technical Deep Dives (monthly)
+- Product Training (quarterly releases)
+- Sales Methodology Training (sales team)
+
+External Programs:
+- Approved external training covered by L&D budget
+- Manager approval required for programs over $500
+- Time off provided for approved training
+
+2.3 Conferences and Events
+Team members may attend professional conferences:
+- Annual budget: $2,000 per team member for conferences
+- Includes registration, travel, and accommodations
+- Manager approval required
+- Share learnings with team upon return
+
+3. Professional Development Budget
+
+3.1 Individual Budget
+Every team member receives:
+- Annual development budget: $2,000
+- Rollover: Unused funds do not carry over
+- Approval: Manager approval for expenses over $500
+- Reimbursement: Submit through expense system
+
+3.2 Eligible Expenses
+Budget may be used for:
+- Conference registration and travel
+- Online courses and certifications
+- Books and learning materials
+- Professional association memberships
+- Coaching or mentoring services
+- Workshops and seminars
+
+3.3 Ineligible Expenses
+Budget may NOT be used for:
+- Degree programs (see Tuition Assistance)
+- Personal interest courses unrelated to work
+- Hardware or equipment
+- Travel for non-approved events
+
+4. Certification Support
+
+4.1 Encouraged Certifications
+TechNova supports professional certifications:
+
+Technical Certifications:
+- AWS, GCP, Azure cloud certifications
+- Security certifications (CISSP, CEH, etc.)
+- Project management (PMP, PMI-ACP)
+- Agile certifications (CSM, CSPO, SAFe)
+- Development certifications (various)
+
+Business Certifications:
+- HR certifications (PHR, SPHR, SHRM)
+- Finance certifications (CPA, CFA)
+- Marketing certifications (various)
+
+4.2 Certification Benefits
+For approved certifications:
+- Exam fees covered (first attempt and one retake)
+- Study materials covered
+- Paid study time (up to 16 hours)
+- Certification bonus upon passing (varies by certification)
+- Renewal fees covered
+
+4.3 Certification Process
+To pursue a certification:
+1. Discuss with your manager during 1:1
+2. Submit certification request in L&D portal
+3. Receive approval and budget allocation
+4. Complete study and examination
+5. Submit passing documentation for bonus
+
+5. Tuition Assistance
+
+5.1 Eligibility
+Tuition assistance is available to:
+- Full-time team members with 1+ year of service
+- Programs must be related to current or future role
+- Must maintain satisfactory job performance
+- Must remain employed for 2 years post-completion (or repay)
+
+5.2 Coverage
+Tuition assistance covers:
+- Undergraduate or graduate degree programs
+- Up to $5,250 per calendar year (tax-free limit)
+- Additional support up to $10,000/year (taxable)
+- Books and required materials included
+
+5.3 Application Process
+To apply for tuition assistance:
+1. Complete application in HR portal
+2. Provide program details and business justification
+3. Receive approval from manager and HR
+4. Enroll in approved program
+5. Submit receipts for reimbursement after each term
+
+6. Career Development
+
+6.1 Career Paths
+TechNova offers two primary career tracks:
+- Individual Contributor: Technical/functional expertise
+- Management: People leadership and team management
+
+Both tracks are valued equally, and movement between them is supported.
+
+6.2 Development Planning
+Every team member should have a development plan:
+- Created annually with manager input
+- Reviewed quarterly during 1:1s
+- Aligned with career goals and business needs
+- Documented in performance system
+
+6.3 Development Conversations
+Regular development discussions include:
+- Where do you want to be in 2-3 years?
+- What skills do you need to develop?
+- What experiences would help you grow?
+- How can TechNova support your goals?
+- What's your next role aspiration?
+
+7. Mentorship Programs
+
+7.1 Formal Mentorship
+TechNova offers structured mentorship:
+- 6-month mentorship cycles
+- Matched based on goals and experience
+- Monthly meetings expected
+- Focus on career guidance and growth
+- Apply through L&D portal
+
+7.2 Mentorship Guidelines
+Mentors commit to:
+- Monthly 1-hour meetings with mentee
+- Sharing experience and perspective
+- Providing honest feedback and guidance
+- Supporting mentee's development goals
+
+Mentees commit to:
+- Preparing for each mentorship session
+- Following through on commitments
+- Being open to feedback
+- Driving the relationship agenda
+
+7.3 Peer Mentorship
+Informal peer mentorship is encouraged:
+- Connect with colleagues for skills exchange
+- Join communities of practice
+- Participate in pair programming or shadowing
+- Share knowledge through documentation
+
+8. Management Development
+
+8.1 New Manager Training
+All new managers must complete:
+- New Manager Essentials (40-hour program)
+- Topics: hiring, feedback, performance management, coaching
+- Completed within first 90 days of management role
+
+8.2 Leadership Development
+Senior leaders have access to:
+- Leadership Development Program (director+)
+- Executive coaching (VP+)
+- External leadership programs
+- Leadership team retreats and offsites
+
+8.3 Manager Resources
+Ongoing manager support includes:
+- Manager community of practice
+- Monthly manager roundtables
+- Manager resource library
+- HR business partner support
+
+9. Internal Mobility
+
+9.1 Internal Opportunities
+We encourage internal career movement:
+- All open positions posted internally
+- Internal candidates receive fair consideration
+- Lateral moves supported for skill development
+- Stretch assignments available across teams
+
+9.2 Stretch Assignments
+Grow through new experiences:
+- Short-term projects on other teams
+- Cross-functional initiatives
+- Special projects and task forces
+- Acting roles during leaves or transitions
+
+9.3 Job Shadowing
+Learn about other roles:
+- Request shadowing through L&D portal
+- Typically 2-4 hours with another team member
+- No manager approval required for short shadows
+- Great for exploring career options
+
+10. Skills Development Resources
+
+10.1 Technical Skills
+Engineering team members have access to:
+- Internal tech talks (weekly)
+- Hackathons (quarterly)
+- Architecture review participation
+- Open source contribution time
+- Technical writing opportunities
+
+10.2 Business Skills
+All team members can develop:
+- Communication and presentation skills
+- Project management capabilities
+- Data analysis and insights
+- Strategic thinking
+- Cross-functional collaboration
+
+10.3 Soft Skills
+Essential skills for all roles:
+- Giving and receiving feedback
+- Conflict resolution
+- Time management
+- Emotional intelligence
+- Adaptability and resilience
+
+11. Measuring Development
+
+11.1 Individual Tracking
+Track your development through:
+- L&D portal course completions
+- Certification achievements
+- Development plan progress
+- Skills self-assessments
+
+11.2 Organizational Metrics
+We measure L&D effectiveness through:
+- Training participation rates
+- Learning hour metrics
+- Internal mobility rates
+- Engagement survey results
+- Performance improvement correlation
+
+12. Contact Information
+
+Learning & Development Team: learning@technova.com
+L&D Portal: learning.technova.com
+Tuition Assistance: hr@technova.com
+Mentorship Program: mentorship@technova.com
+

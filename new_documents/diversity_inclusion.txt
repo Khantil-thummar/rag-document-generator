@@ -1,0 +1,272 @@
+TechNova Solutions - Employee Handbook
+Document: Diversity, Equity, and Inclusion Policy
+Last Updated: December 2024
+------------------------------------------------------------
+
+1. Diversity, Equity, and Inclusion at TechNova
+
+1.1 Our Commitment
+TechNova Solutions is committed to building and maintaining a diverse, equitable, and inclusive workplace where every team member can thrive. We believe that diverse perspectives drive innovation, enhance decision-making, and create better products for our customers.
+
+1.2 DEI Vision
+Our vision is to create a workplace where:
+- Every team member feels they belong and are valued
+- Diverse perspectives are actively sought and embraced
+- Equitable opportunities exist for all
+- Inclusive practices are embedded in everything we do
+- Our workforce reflects the diversity of the communities we serve
+
+2. Definitions
+
+2.1 Diversity
+Diversity refers to the range of human differences, including but not limited to:
+- Race and ethnicity
+- Gender and gender identity
+- Sexual orientation
+- Age and generation
+- Disability status
+- Religion and belief
+- National origin
+- Socioeconomic background
+- Education and experience
+- Veteran status
+- Thinking styles and perspectives
+
+2.2 Equity
+Equity means ensuring fair treatment, access, and opportunity for all team members by:
+- Identifying and removing barriers to participation
+- Providing resources based on individual needs
+- Addressing systemic disadvantages
+- Creating level playing fields for success
+
+2.3 Inclusion
+Inclusion is the practice of creating an environment where:
+- All team members feel welcome and respected
+- Diverse voices are heard and valued
+- Everyone can participate fully and authentically
+- Differences are celebrated, not merely tolerated
+
+2.4 Belonging
+Belonging is the outcome of successful DEI efforts, where team members:
+- Feel accepted for who they are
+- Experience psychological safety
+- Can bring their whole selves to work
+- Feel connected to colleagues and the organization
+
+3. DEI Strategic Pillars
+
+3.1 Pillar 1: Diverse Workforce
+Building a workforce that reflects diverse communities:
+- Inclusive hiring practices and diverse candidate slates
+- Partnerships with diverse professional organizations
+- University recruiting at HBCUs, HSIs, and other diverse institutions
+- Internship programs targeting underrepresented groups
+- Removing bias from job descriptions and requirements
+
+3.2 Pillar 2: Equitable Systems
+Creating fair processes and policies:
+- Regular pay equity analyses and adjustments
+- Transparent promotion criteria and processes
+- Equitable access to stretch assignments and visibility
+- Standardized performance evaluation criteria
+- Accessible workplace accommodations
+
+3.3 Pillar 3: Inclusive Culture
+Fostering a culture where everyone belongs:
+- Inclusive leadership development programs
+- Unconscious bias training for all team members
+- Employee Resource Groups for community building
+- Celebrating diverse holidays and cultural events
+- Safe channels for raising concerns
+
+4. Employee Resource Groups (ERGs)
+
+4.1 About ERGs
+Employee Resource Groups are voluntary, employee-led groups that:
+- Foster connection among team members with shared identities
+- Provide professional development and mentorship
+- Advise on company policies and practices
+- Support recruiting and retention efforts
+- Create educational opportunities for allies
+
+4.2 Current ERGs at TechNova
+- TechNova Women: Supporting women and allies
+- TechNova Pride: LGBTQ+ community and allies
+- TechNova Black Excellence: Black employees and allies
+- TechNova Unidos: Latino/Hispanic employees and allies
+- TechNova Abilities: Team members with disabilities and allies
+- TechNova Veterans: Military veterans and families
+- TechNova API: Asian and Pacific Islander employees and allies
+- TechNova Parents: Working parents and caregivers
+- TechNova Next Gen: Early-career professionals
+
+4.3 ERG Support
+TechNova supports ERGs through:
+- Annual budget for events and activities
+- Executive sponsors from leadership team
+- Paid time for ERG activities (up to 4 hours/month)
+- Platform for ERG visibility and communication
+- ERG leader recognition and development
+
+4.4 Starting an ERG
+To propose a new ERG:
+- Submit proposal to dei@technova.com
+- Gather at least 10 interested team members
+- Identify leadership team and executive sponsor
+- Develop mission statement and goals
+- Present to DEI Council for approval
+
+5. Hiring and Talent Practices
+
+5.1 Inclusive Hiring
+Our hiring practices include:
+- Diverse interview panels for all positions
+- Structured interviews with consistent questions
+- Skills-based assessments over credential requirements
+- Blind resume review where feasible
+- Inclusive job descriptions using gender-neutral language
+
+5.2 Diverse Candidate Slates
+For all positions:
+- Aim for diverse candidate slates at interview stage
+- Partner with diverse recruiting sources
+- Track diversity metrics through hiring funnel
+- Provide training for hiring managers on inclusive hiring
+
+5.3 Retention and Development
+Retaining diverse talent through:
+- Mentorship programs pairing diverse talent with leaders
+- Sponsorship initiatives for high-potential diverse employees
+- Leadership development programs with diverse cohorts
+- Regular engagement surveys with demographic analysis
+- Stay interviews to understand retention drivers
+
+6. Pay Equity
+
+6.1 Commitment to Pay Equity
+TechNova is committed to equal pay for equal work:
+- Annual pay equity analysis across all demographics
+- Adjustments made to address unexplained disparities
+- Transparent salary bands for all positions
+- No salary history questions in hiring
+
+6.2 Pay Transparency
+We practice pay transparency by:
+- Publishing salary ranges in job postings
+- Sharing salary band information with team members
+- Explaining compensation philosophy and decisions
+- Providing clear criteria for advancement and raises
+
+7. Accessibility and Accommodations
+
+7.1 Physical Accessibility
+TechNova offices are designed for accessibility:
+- Wheelchair accessible entrances and restrooms
+- Accessible parking and transportation options
+- Adjustable desks and ergonomic equipment
+- Quiet spaces for those who need them
+
+7.2 Digital Accessibility
+Our digital products and tools meet accessibility standards:
+- WCAG 2.1 AA compliance for internal tools
+- Screen reader compatible systems
+- Captioning for video content
+- Accessible document formats
+
+7.3 Requesting Accommodations
+Team members needing accommodations should:
+- Contact HR at accommodations@technova.com
+- Engage in interactive process to determine needs
+- Receive reasonable accommodations in timely manner
+- Know that accommodation requests are confidential
+
+8. Inclusive Culture Practices
+
+8.1 Inclusive Meetings
+We practice inclusive meeting norms:
+- Rotate meeting times for global teams
+- Provide agendas in advance
+- Create space for all voices to be heard
+- Use inclusive language
+- Record meetings for those who cannot attend
+- Respect different communication styles
+
+8.2 Inclusive Language
+We use inclusive language by:
+- Using gender-neutral terms (team members, not guys)
+- Respecting chosen names and pronouns
+- Avoiding idioms that may not translate across cultures
+- Being mindful of ableist language
+- Updating documentation to reflect inclusive terms
+
+8.3 Pronouns
+We support pronoun sharing by:
+- Encouraging (not requiring) pronoun sharing
+- Adding pronouns to email signatures and Slack profiles
+- Training on proper pronoun usage
+- Correcting mistakes gracefully
+
+9. Reporting and Accountability
+
+9.1 Reporting Concerns
+If you experience or witness discrimination or exclusion:
+- Report to your manager (if comfortable)
+- Contact HR at hr@technova.com
+- Use the anonymous ethics hotline
+- Reach out to any DEI Council member
+- All reports are investigated and kept confidential
+
+9.2 Non-Retaliation
+TechNova prohibits retaliation against anyone who:
+- Reports DEI concerns in good faith
+- Participates in investigations
+- Advocates for DEI initiatives
+- Provides feedback on inclusive practices
+
+9.3 Accountability
+Leaders are accountable for DEI through:
+- DEI goals in performance evaluations
+- Regular reporting on team diversity metrics
+- Participation in DEI training and initiatives
+- Modeling inclusive behaviors
+
+10. Training and Education
+
+10.1 Required Training
+All team members complete:
+- Unconscious Bias Fundamentals (upon hire)
+- Inclusive Behaviors workshop (annual)
+- Harassment Prevention (annual)
+
+10.2 Additional Learning
+Optional learning opportunities include:
+- Allyship in Action workshop
+- Inclusive Leadership for managers
+- Cultural competency sessions
+- ERG-hosted educational events
+
+11. Measuring Progress
+
+11.1 Metrics We Track
+We measure DEI progress through:
+- Workforce diversity at all levels
+- Hiring and promotion rates by demographic
+- Retention rates by demographic
+- Pay equity analysis results
+- Engagement survey results by demographic
+- ERG participation rates
+
+11.2 Transparency
+We share DEI data through:
+- Annual diversity report (public)
+- Quarterly updates to all team members
+- Board-level DEI reporting
+- External benchmarking
+
+12. Contact Information
+
+DEI Team: dei@technova.com
+Accommodations: accommodations@technova.com
+Anonymous Reporting: ethics.technova.com
+ERG Information: ergs@technova.com
+

@@ -1,0 +1,258 @@
+TechNova Solutions - Employee Handbook
+Document: Information Security Policy
+Last Updated: December 2024
+------------------------------------------------------------
+
+1. Information Security Policy
+
+1.1 Security Vision
+At TechNova Solutions, security is everyone's responsibility. Our vision is to protect our company, our customers, and our team members through proactive security measures while enabling innovation and productivity.
+
+1.2 Security Mission
+Our security mission is to:
+- Protect sensitive company and customer data
+- Maintain secure systems and infrastructure
+- Enable team members to work safely from anywhere
+- Comply with all applicable security regulations
+- Build a security-conscious culture across the organization
+
+2. Security Principles
+
+2.1 Core Security Principles
+- Defense in Depth: Multiple layers of security controls
+- Least Privilege: Access only to what is needed for the job
+- Zero Trust: Verify every user and device, every time
+- Security by Design: Build security into everything from the start
+- Continuous Improvement: Regularly assess and enhance security posture
+
+2.2 Shared Responsibility
+Security is a shared responsibility:
+- Security Team: Provides tools, training, and incident response
+- IT Team: Implements and maintains security controls
+- All Team Members: Follow security policies and report concerns
+- Leadership: Supports security initiatives and culture
+
+3. Account and Password Security
+
+3.1 Password Requirements
+All TechNova accounts must use strong passwords:
+- Minimum 12 characters
+- Mix of uppercase, lowercase, numbers, and symbols
+- No dictionary words or personal information
+- Unique password for each system
+- Changed every 90 days for sensitive systems
+
+3.2 Multi-Factor Authentication (MFA)
+MFA is required for:
+- All TechNova systems accessed through Okta
+- Email and calendar access
+- VPN connections
+- Cloud services (AWS, GCP, Azure)
+- Source code repositories
+
+Approved MFA methods:
+- Hardware security keys (preferred)
+- Authenticator apps (Okta Verify, Google Authenticator)
+- Push notifications through Okta Verify
+
+SMS-based MFA is NOT approved due to security vulnerabilities.
+
+3.3 Password Managers
+All team members must use a company-approved password manager:
+- 1Password is provided free to all team members
+- Store all work passwords in 1Password
+- Never share passwords via email, Slack, or other channels
+- Use 1Password to generate random passwords
+
+4. Device Security
+
+4.1 Company Devices
+All company-issued devices must:
+- Have full disk encryption enabled
+- Run approved endpoint protection software
+- Be registered in our Mobile Device Management (MDM) system
+- Have automatic updates enabled
+- Use company-approved security configurations
+
+4.2 Personal Devices
+Using personal devices for work (BYOD) requires:
+- Approval from IT and your manager
+- Installation of company MDM profile
+- Separation of personal and work data
+- Compliance with all device security requirements
+- Immediate notification if device is lost or stolen
+
+4.3 Lost or Stolen Devices
+If a device is lost or stolen:
+1. Report immediately to security@technova.com
+2. Call the 24/7 security hotline: 1-800-TECH-SEC
+3. IT will remotely wipe the device
+4. File a police report if stolen
+5. Document the incident in the security portal
+
+5. Network Security
+
+5.1 VPN Usage
+Use the company VPN when:
+- Accessing sensitive internal systems
+- Working from public Wi-Fi (airports, coffee shops, hotels)
+- Connecting to customer environments
+- Working from international locations
+
+VPN is NOT required for:
+- Basic email and calendar (accessed through Okta)
+- Slack and general collaboration tools
+- Public internet browsing
+
+5.2 Public Wi-Fi
+When using public Wi-Fi:
+- Always connect through VPN
+- Avoid accessing highly sensitive data
+- Use HTTPS-only connections
+- Disable automatic Wi-Fi connection on devices
+- Consider using mobile hotspot for sensitive work
+
+5.3 Home Network Security
+Secure your home network by:
+- Changing default router passwords
+- Using WPA3 encryption (or WPA2 minimum)
+- Keeping router firmware updated
+- Creating a separate network for IoT devices
+- Disabling remote management features
+
+6. Data Protection
+
+6.1 Data Classification
+TechNova data is classified as:
+
+Public: Information intended for public release
+- Marketing materials, blog posts, press releases
+- No special handling required
+
+Internal: Information for TechNova team members only
+- Internal communications, policies, procedures
+- Should not be shared externally
+
+Confidential: Sensitive business information
+- Financial data, strategic plans, employee records
+- Access restricted to those with business need
+
+Restricted: Highly sensitive data requiring maximum protection
+- Customer PII, payment information, trade secrets
+- Strict access controls and encryption required
+
+6.2 Data Handling Requirements
+- Store confidential data only in approved systems
+- Never email restricted data without encryption
+- Don't store sensitive data on personal devices
+- Properly dispose of data when no longer needed
+- Report any data breaches immediately
+
+6.3 Customer Data
+Handling customer data requires:
+- Access only when necessary for your job
+- No downloading to personal devices
+- No sharing outside of TechNova without authorization
+- Compliance with customer contracts and regulations
+- Logging of all access for audit purposes
+
+7. Email Security
+
+7.1 Email Best Practices
+- Verify sender identity before responding to sensitive requests
+- Don't click links in unexpected emails
+- Report suspicious emails using the "Report Phishing" button
+- Use encryption for emails containing sensitive data
+- Never send passwords via email
+
+7.2 Phishing Awareness
+Recognize phishing attempts:
+- Urgent or threatening language
+- Requests for passwords or personal information
+- Unexpected attachments
+- Mismatched sender names and email addresses
+- Poor grammar or spelling
+
+If you suspect phishing:
+1. Don't click any links or attachments
+2. Use the "Report Phishing" button in Gmail
+3. Forward to security@technova.com
+4. Delete the email after reporting
+
+8. Physical Security
+
+8.1 Office Security
+When in TechNova offices:
+- Always wear your badge visibly
+- Don't let others "tailgate" through secure doors
+- Lock your computer when stepping away
+- Store sensitive documents securely
+- Report suspicious individuals or activities
+
+8.2 Clean Desk Policy
+Before leaving your workspace:
+- Lock computer screens
+- Secure sensitive documents in locked storage
+- Don't leave confidential information visible
+- Clear whiteboards of sensitive content
+- Secure access badges and keys
+
+9. Incident Reporting
+
+9.1 What to Report
+Report to security@technova.com:
+- Suspected phishing or social engineering attempts
+- Lost or stolen devices
+- Unauthorized access attempts
+- Suspicious system behavior
+- Potential data breaches
+- Security policy violations
+
+9.2 How to Report
+For security incidents:
+- Email: security@technova.com
+- Slack: #security-incidents
+- Phone (24/7): 1-800-TECH-SEC
+- Anonymous: security.technova.com/report
+
+Don't delay reporting - early notification enables faster response.
+
+10. Security Training
+
+10.1 Required Training
+All team members must complete:
+- Security Awareness Fundamentals (annual)
+- Phishing Recognition (annual)
+- Data Handling (upon hire and annual refresh)
+- Role-specific security training (as applicable)
+
+10.2 Additional Resources
+- Monthly security newsletter
+- Quarterly security office hours
+- Security Champions program for interested team members
+- Annual Cybersecurity Awareness Month activities
+
+11. Compliance
+
+11.1 Regulatory Requirements
+TechNova complies with:
+- SOC 2 Type II
+- GDPR (for EU customer data)
+- CCPA (for California consumer data)
+- HIPAA (for healthcare customers)
+- Industry-specific requirements as applicable
+
+11.2 Audits
+- Annual third-party security audits
+- Quarterly internal security assessments
+- Regular penetration testing
+- Continuous vulnerability scanning
+
+12. Contact Information
+
+Security Team: security@technova.com
+24/7 Security Hotline: 1-800-TECH-SEC
+Security Slack Channel: #security-help
+Report Phishing: security@technova.com or "Report Phishing" button
+Anonymous Reporting: security.technova.com/report
+

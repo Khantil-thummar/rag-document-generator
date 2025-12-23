@@ -1,0 +1,202 @@
+TechNova Solutions - Employee Handbook
+Document: New Employee Onboarding Guide
+Last Updated: December 2024
+------------------------------------------------------------
+
+1. Welcome to TechNova Solutions
+
+1.1 Congratulations!
+Welcome to the TechNova team! We're excited to have you join us. This onboarding guide will help you navigate your first days and weeks at TechNova, setting you up for success in your new role.
+
+1.2 Onboarding Philosophy
+At TechNova, we believe that great onboarding is the foundation for long-term success. We don't expect you to be fully productive from day one. Take time to learn our systems, meet your colleagues, and understand our culture. Your first 30 days are about learning and integration.
+
+2. Before Your First Day
+
+2.1 Pre-Boarding Checklist
+Before your start date, you should:
+- Complete all paperwork in the HR portal (Workday)
+- Review and sign your offer letter and employment agreement
+- Complete I-9 verification and background check
+- Order your laptop through the IT equipment portal
+- Set up your benefits elections
+- Review the employee handbook (this document!)
+
+2.2 Equipment Delivery
+- Your company laptop will be shipped to arrive before your start date
+- Equipment includes: laptop, charger, and welcome kit
+- If equipment hasn't arrived by the day before your start, contact it@technova.com
+
+2.3 Account Setup
+You will receive emails with setup instructions for:
+- TechNova email (Google Workspace)
+- Slack workspace
+- Okta (single sign-on portal)
+- Workday (HR system)
+
+3. Your First Day
+
+3.1 Day 1 Schedule
+Your first day typically includes:
+- 9:00 AM: Welcome call with your manager
+- 10:00 AM: IT setup and systems overview
+- 11:00 AM: HR orientation session
+- 12:00 PM: Virtual lunch with your team
+- 2:00 PM: One-on-one with your manager
+- 3:30 PM: Self-paced onboarding tasks
+
+3.2 First Day Priorities
+On your first day, focus on:
+- Setting up your laptop and essential tools
+- Configuring two-factor authentication on all accounts
+- Completing mandatory compliance training
+- Meeting your immediate team members
+- Reviewing your onboarding checklist in Workday
+
+3.3 Your Onboarding Buddy
+You will be assigned an onboarding buddy who will:
+- Answer day-to-day questions about TechNova
+- Help you navigate the company culture
+- Introduce you to people across the organization
+- Meet with you weekly for your first month
+- Be your go-to resource when you're unsure who to ask
+
+4. Your First Week
+
+4.1 Week 1 Goals
+During your first week, you should:
+- Complete all required compliance and security training
+- Attend team meetings and 1:1s with key stakeholders
+- Set up your development environment (for engineering roles)
+- Review documentation for your team and projects
+- Schedule coffee chats with teammates
+
+4.2 Required Training
+Complete these modules in your first week:
+- Security Awareness Training (2 hours)
+- Code of Conduct Review (1 hour)
+- Anti-Harassment Training (1 hour)
+- Data Privacy Fundamentals (1 hour)
+- Tools and Systems Overview (2 hours)
+
+4.3 Systems to Set Up
+Ensure you have access to:
+- Email and Calendar (Google Workspace)
+- Slack (communication)
+- Notion (documentation)
+- Jira (project management)
+- GitHub (for technical roles)
+- Figma (for design roles)
+- Salesforce (for sales roles)
+
+5. Your First Month
+
+5.1 30-Day Milestones
+By the end of your first month, you should:
+- Understand your team's goals and current projects
+- Complete all onboarding training modules
+- Have met with all key stakeholders in your role
+- Attend your first team retrospective or planning session
+- Submit your first contribution (code, design, document, etc.)
+- Complete your 30-day check-in with your manager
+
+5.2 Setting Goals
+During your first month, work with your manager to:
+- Understand expectations for your role
+- Set 90-day goals aligned with team objectives
+- Identify skills you want to develop
+- Discuss your career aspirations and growth areas
+
+5.3 Team Integration
+Get to know your team by:
+- Attending all team meetings and standups
+- Participating in team Slack channels
+- Joining optional social events and coffee chats
+- Asking questions freely (there are no dumb questions!)
+
+6. Your First 90 Days
+
+6.1 90-Day Milestones
+By the end of your first 90 days, you should:
+- Be independently contributing to team projects
+- Have a clear understanding of company processes
+- Completed your 90-day performance check-in
+- Feel comfortable reaching out to colleagues for help
+- Have established regular working relationships
+
+6.2 90-Day Review
+At 90 days, you'll have a formal check-in with your manager to:
+- Review your progress against initial goals
+- Discuss what's working well and areas for improvement
+- Set goals for the next quarter
+- Address any concerns or questions
+
+7. Key Contacts and Resources
+
+7.1 Important Contacts
+- Your Manager: Your primary point of contact for work questions
+- HR Team: hr@technova.com for policy and benefits questions
+- IT Support: it@technova.com or #it-help on Slack
+- Facilities: facilities@technova.com for office-related needs
+- Payroll: payroll@technova.com for compensation questions
+
+7.2 Helpful Slack Channels
+- #general: Company-wide announcements
+- #random: Casual conversation and fun
+- #help-desk: Technical support questions
+- #new-hires: Connect with other new team members
+- #kudos: Recognize colleagues for great work
+- #announcements: Official company news
+
+7.3 Documentation
+Find important documents in:
+- Notion: Team wikis and documentation
+- Google Drive: Shared files and templates
+- Workday: HR policies and personal information
+- Confluence: Technical documentation (engineering)
+
+8. Culture and Values
+
+8.1 Our Core Values
+TechNova is built on these core values:
+- Innovation: We embrace new ideas and continuous improvement
+- Integrity: We do the right thing, even when no one is watching
+- Collaboration: We achieve more together than alone
+- Customer Focus: We put customers at the center of everything
+- Respect: We value diverse perspectives and treat everyone with dignity
+
+8.2 Communication Norms
+At TechNova, we:
+- Default to transparency and openness
+- Communicate asynchronously when possible
+- Document decisions for those not in the room
+- Use video for important or sensitive discussions
+- Respect time zones and work-life boundaries
+
+8.3 Feedback Culture
+We believe in continuous feedback:
+- Give feedback promptly and constructively
+- Receive feedback with openness and gratitude
+- Use 1:1s to discuss performance regularly
+- Conduct formal reviews twice per year
+
+9. Getting Help
+
+9.1 When You're Stuck
+If you need help:
+1. Check the documentation in Notion first
+2. Ask in the relevant Slack channel
+3. Reach out to your onboarding buddy
+4. Escalate to your manager if needed
+
+9.2 Common Questions
+- Expense reports: Submit through Expensify
+- Time off: Request through Workday
+- Equipment issues: Contact IT via #it-help
+- Benefits questions: Email hr@technova.com
+
+10. Onboarding Feedback
+We're always improving our onboarding process. After 30 days, you'll receive a survey to share your experience. We value your honest feedback!
+
+Welcome again to TechNova Solutions. We're glad you're here!
+

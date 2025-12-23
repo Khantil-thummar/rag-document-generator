@@ -1,0 +1,294 @@
+TechNova Solutions - Employee Handbook
+Document: Performance Management and Review Policy
+Last Updated: December 2024
+------------------------------------------------------------
+
+1. Performance Management Philosophy
+
+1.1 Our Approach
+At TechNova Solutions, we believe that effective performance management is about ongoing dialogue, clear expectations, and continuous development. Our approach emphasizes regular feedback over annual surprises, growth mindset, and partnership between managers and team members.
+
+1.2 Core Principles
+Our performance management is guided by:
+- Continuous Feedback: Regular conversations, not just annual reviews
+- Clear Expectations: Well-defined goals and success criteria
+- Development Focus: Growth-oriented feedback and coaching
+- Two-Way Dialogue: Performance is a partnership
+- Fair Evaluation: Objective criteria and calibrated ratings
+
+2. Performance Cycle
+
+2.1 Annual Cycle Overview
+Our performance year runs January through December:
+
+Q1 (January-March):
+- Goal setting for the year
+- Development planning
+- Prior year review finalization
+
+Q2 (April-June):
+- Mid-year check-in preparation
+- Progress review against goals
+- Goal adjustments as needed
+
+Q3 (July-September):
+- Mid-year formal review
+- Updated development plans
+- Second half goal refinement
+
+Q4 (October-December):
+- Year-end self-assessment
+- Manager evaluations
+- Calibration sessions
+- Annual review conversations
+
+2.2 Key Dates
+Important performance cycle dates:
+- January 15: Goals due in system
+- July 15: Mid-year reviews due
+- November 1: Self-assessments due
+- November 15: Manager reviews due
+- December 1-15: Calibration sessions
+- January 1-31: Review conversations completed
+
+3. Goal Setting
+
+3.1 Goal Framework
+Goals should be SMART:
+- Specific: Clear and well-defined
+- Measurable: Quantifiable success criteria
+- Achievable: Challenging but realistic
+- Relevant: Aligned with team and company objectives
+- Time-bound: Clear deadlines and milestones
+
+3.2 Goal Categories
+Team members should set goals in these areas:
+- Business Results: What you will accomplish
+- Skills Development: How you will grow
+- Collaboration: How you will work with others
+- Values Demonstration: How you exemplify TechNova values
+
+3.3 Goal Quantity
+Recommended number of goals:
+- 3-5 major business goals
+- 1-2 development goals
+- Quality over quantity
+
+3.4 Goal Alignment
+Goals should align with:
+- Team objectives and priorities
+- Department OKRs
+- Company strategic goals
+- Individual career aspirations
+
+4. Ongoing Feedback
+
+4.1 Continuous Feedback Culture
+We encourage feedback throughout the year:
+- Regular 1:1 conversations (weekly recommended)
+- Real-time feedback after key events
+- Peer feedback and recognition
+- Upward feedback to managers
+
+4.2 One-on-One Meetings
+Effective 1:1s should include:
+- Progress updates on goals and projects
+- Blockers and support needed
+- Feedback (both directions)
+- Career development discussion
+- Recognition and appreciation
+
+4.3 Feedback Best Practices
+When giving feedback:
+- Be specific and provide examples
+- Focus on behaviors, not personality
+- Balance positive and constructive
+- Make it timely (close to the event)
+- Offer suggestions for improvement
+
+When receiving feedback:
+- Listen without becoming defensive
+- Ask clarifying questions
+- Thank the person for sharing
+- Reflect and take action
+
+5. Performance Reviews
+
+5.1 Mid-Year Review
+The mid-year review (July) includes:
+- Progress assessment against goals
+- Preliminary performance discussion
+- Goal adjustments if needed
+- Development plan check-in
+- Documentation in performance system
+
+5.2 Annual Review
+The annual review (January) includes:
+- Comprehensive performance assessment
+- Self-assessment by team member
+- Manager evaluation and rating
+- Calibrated final rating
+- Development planning for next year
+- Compensation discussion (if applicable)
+
+5.3 Self-Assessment
+Team members complete self-assessments covering:
+- Goal achievement with evidence
+- Key accomplishments
+- Challenges and how they were addressed
+- Values demonstration
+- Development progress
+- Goals for the coming year
+
+5.4 Manager Evaluation
+Managers evaluate based on:
+- Goal achievement and results
+- Quality of work and impact
+- Collaboration and teamwork
+- Values and cultural contribution
+- Development and growth
+- Overall performance rating
+
+6. Performance Ratings
+
+6.1 Rating Scale
+TechNova uses a 5-point rating scale:
+
+5 - Exceptional:
+- Significantly exceeds all expectations
+- Extraordinary impact on business results
+- Role model for values and behaviors
+- Rare rating (typically <5% of team)
+
+4 - Exceeds Expectations:
+- Exceeds most expectations
+- Strong contributor with notable achievements
+- Consistently demonstrates values
+
+3 - Meets Expectations:
+- Fully meets role expectations
+- Solid contributor
+- Reliable performance
+- Most common rating
+
+2 - Needs Improvement:
+- Falls short of some expectations
+- Development areas identified
+- May require performance improvement plan
+
+1 - Does Not Meet Expectations:
+- Consistently below expectations
+- Serious performance concerns
+- Immediate action required
+
+6.2 Rating Calibration
+Ratings are calibrated to ensure:
+- Consistent standards across teams
+- Fair distribution of ratings
+- Objective evaluation criteria
+- No bias in rating decisions
+
+7. Calibration Process
+
+7.1 Purpose
+Calibration sessions ensure:
+- Fairness and consistency in ratings
+- Cross-team comparison of performance
+- Identification of high performers and concerns
+- Alignment on performance standards
+
+7.2 Process
+Calibration involves:
+- Managers present their ratings and justification
+- Discussion of borderline cases
+- Adjustment of ratings as needed
+- Agreement on final ratings
+
+7.3 Participants
+Calibration sessions include:
+- Department leadership
+- HR Business Partner (facilitator)
+- Peer managers
+
+8. Performance Improvement
+
+8.1 When PIPs Are Used
+Performance Improvement Plans (PIPs) may be issued when:
+- Performance consistently below expectations
+- Prior coaching has not resulted in improvement
+- Clear gap between expectations and delivery
+- Team member has been given feedback and opportunity
+
+8.2 PIP Structure
+A PIP includes:
+- Specific areas needing improvement
+- Clear expectations and success criteria
+- Timeline (typically 30-60 days)
+- Support and resources provided
+- Consequences of not improving
+
+8.3 During a PIP
+Team members on a PIP:
+- Meet weekly with their manager
+- Receive regular documented feedback
+- Are not eligible for promotions or transfers
+- May successfully complete and exit PIP
+- Or may be separated if improvement not demonstrated
+
+9. High Performer Recognition
+
+9.1 Identifying High Performers
+High performers are identified through:
+- Consistent exceptional ratings
+- Significant business impact
+- Values role modeling
+- Development of others
+- Future potential assessment
+
+9.2 High Performer Development
+High performers receive:
+- Stretch assignments and visibility
+- Accelerated development opportunities
+- Executive mentorship
+- Retention-focused conversations
+- Consideration for advancement
+
+10. Documentation
+
+10.1 Performance System
+All performance documentation is maintained in Workday:
+- Goals and progress updates
+- Self-assessments and manager reviews
+- Performance ratings (historical)
+- Development plans
+- Feedback and recognition
+
+10.2 Confidentiality
+Performance information is confidential:
+- Shared only on need-to-know basis
+- Protected in secure systems
+- Not discussed publicly
+- Used appropriately in decisions
+
+11. Appeals Process
+
+11.1 Raising Concerns
+If you disagree with your performance evaluation:
+1. Discuss with your manager first
+2. If unresolved, escalate to skip-level
+3. Involve HR Business Partner if needed
+4. Formal appeal process available
+
+11.2 Appeal Review
+Appeals are reviewed by:
+- HR Business Partner
+- Skip-level manager
+- Employee Relations (if needed)
+
+12. Contact Information
+
+Performance Questions: performance@technova.com
+HR Business Partners: hrbp@technova.com
+System Support: hrsystems@technova.com
+Employee Relations: er@technova.com
+
