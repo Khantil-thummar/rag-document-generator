@@ -45,7 +45,7 @@ class DocumentProcessor:
         sentences = self._split_into_sentences(text)
         
         chunks = []
-        current_chunk = []
+        current_chunk = []  # List of sentences (strings)
         current_tokens = 0
         
         for sentence in sentences:
@@ -59,7 +59,7 @@ class DocumentProcessor:
                     current_chunk = []
                     current_tokens = 0
                 
-                # Split long sentence by words
+                # Split long sentence by words and create complete chunks
                 words = sentence.split()
                 temp_chunk = []
                 temp_tokens = 0
@@ -68,6 +68,7 @@ class DocumentProcessor:
                     word_tokens = self._count_tokens(word + " ")
                     if temp_tokens + word_tokens > chunk_size:
                         if temp_chunk:
+                            # Save the word-based chunk as a complete chunk
                             chunks.append(" ".join(temp_chunk))
                         temp_chunk = [word]
                         temp_tokens = word_tokens
@@ -75,9 +76,14 @@ class DocumentProcessor:
                         temp_chunk.append(word)
                         temp_tokens += word_tokens
                 
+                # Any remaining words from the long sentence become a complete chunk
+                # Don't carry them forward to avoid mixing words with sentences
                 if temp_chunk:
-                    current_chunk = temp_chunk
-                    current_tokens = temp_tokens
+                    chunks.append(" ".join(temp_chunk))
+                
+                # Reset state - next iteration starts fresh with sentences
+                current_chunk = []
+                current_tokens = 0
                 continue
             
             # Check if adding sentence exceeds chunk size
