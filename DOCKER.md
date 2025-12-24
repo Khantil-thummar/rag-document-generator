@@ -31,7 +31,7 @@ OPENAI_API_KEY=sk-your-openai-api-key-here
 ### 3. Build the Docker Image
 
 ```bash
-docker build -t rag-document-generator .
+docker build --network=host -t rag-document-generator .
 ```
 
 ### 4. Run the Container
@@ -39,7 +39,7 @@ docker build -t rag-document-generator .
 ```bash
 docker run -d \
   --name rag-api \
-  -p 8000:8000 \
+  --network=host \
   --env-file .env \
   -v $(pwd)/qdrant_data:/app/qdrant_data \
   rag-document-generator
@@ -48,7 +48,7 @@ docker run -d \
 **Flags explained:**
 - `-d` : Run in detached mode (background)
 - `--name rag-api` : Container name for easy reference
-- `-p 8000:8000` : Map port 8000 to host
+- `--network=host` : Use host network (required for OpenAI API access)
 - `--env-file .env` : Load environment variables from file
 - `-v $(pwd)/qdrant_data:/app/qdrant_data` : Persist Qdrant data to host
 
@@ -111,8 +111,8 @@ docker rm rag-api
 ```bash
 docker stop rag-api
 docker rm rag-api
-docker build -t rag-document-generator .
-docker run -d --name rag-api -p 8000:8000 --env-file .env -v $(pwd)/qdrant_data:/app/qdrant_data rag-document-generator
+docker build --network=host -t rag-document-generator .
+docker run -d --name rag-api --network=host --env-file .env -v $(pwd)/qdrant_data:/app/qdrant_data rag-document-generator
 ```
 
 ---
@@ -152,15 +152,12 @@ cat .env
 # Should show: OPENAI_API_KEY=sk-...
 ```
 
-### Port already in use
+### Port 8000 already in use
 
-Change the host port:
+When using `--network=host`, the container uses the host's port 8000 directly. If it's in use, either:
 
-```bash
-docker run -d --name rag-api -p 9000:8000 --env-file .env -v $(pwd)/qdrant_data:/app/qdrant_data rag-document-generator
-```
-
-Then access at `http://localhost:9000`
+1. Stop the process using port 8000, or
+2. Modify the CMD in Dockerfile to use a different port
 
 ---
 

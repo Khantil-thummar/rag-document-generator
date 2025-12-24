@@ -11,17 +11,15 @@ ENV PYTHONPATH=/app
 # Set working directory
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    && rm -rf /var/lib/apt/lists/*
-
 # Copy requirements first for better caching
 COPY requirements.txt .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
+
+# Pre-download tiktoken encoding files (required for offline use)
+RUN python -c "import tiktoken; tiktoken.encoding_for_model('gpt-4o-mini')"
 
 # Copy application code
 COPY app/ ./app/
