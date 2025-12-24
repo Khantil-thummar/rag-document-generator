@@ -108,15 +108,58 @@ pip install -r requirements.txt
 Create a `.env` file in the project root:
 
 ```env
-# Required: OpenAI API Key
+# Required
 OPENAI_API_KEY=sk-your-openai-api-key-here
+
+# Optional - OpenAI Models
+OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+OPENAI_LLM_MODEL=gpt-4o-mini
+
+# Optional - Qdrant Storage
+QDRANT_PATH=./qdrant_data
+QDRANT_COLLECTION_NAME=documents
+
+# Optional - Chunking
+CHUNK_SIZE=500
+CHUNK_OVERLAP=50
+
+# Optional - Retrieval
+TOP_K=5
+SIMILARITY_THRESHOLD=0.3
+
+# Optional - LLM Behavior
+MAX_CONTEXT_TOKENS=4000
+TEMPERATURE=0.3
 ```
 
 ### Environment Variables Explained
 
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
-| `OPENAI_API_KEY` | ✅ Yes | - | Your OpenAI API key |
+| `OPENAI_API_KEY` | ✅ Yes | - | Your OpenAI API key. Get it from [OpenAI Platform](https://platform.openai.com/api-keys). |
+| `OPENAI_EMBEDDING_MODEL` | No | `text-embedding-3-small` | Model for generating embeddings. Options: `text-embedding-3-small` (cheaper) or `text-embedding-3-large` (better quality). |
+| `OPENAI_LLM_MODEL` | No | `gpt-4o-mini` | Model for content generation. Options: `gpt-4o-mini` (fast, cheap) or `gpt-4o` (better quality, expensive). |
+| `QDRANT_PATH` | No | `./qdrant_data` | Directory where Qdrant stores vector data. Data persists across restarts. |
+| `QDRANT_COLLECTION_NAME` | No | `documents` | Qdrant collection name. Change for separate collections per project. |
+| `CHUNK_SIZE` | No | `500` | Max tokens per chunk. Larger = more context, less precise. Smaller = more precise, less context. |
+| `CHUNK_OVERLAP` | No | `50` | Overlap tokens between chunks. Helps preserve context across boundaries. |
+| `TOP_K` | No | `5` | Number of chunks to retrieve. Increase for more context, decrease for speed. Can override per-request. |
+| `SIMILARITY_THRESHOLD` | No | `0.3` | Min similarity score (0.0-1.0). Higher = stricter matching. Lower = more permissive. |
+| `MAX_CONTEXT_TOKENS` | No | `4000` | Max tokens for context in LLM prompt. Limits retrieved content sent to model. |
+| `TEMPERATURE` | No | `0.3` | LLM creativity (0.0-1.0). Lower = factual. Higher = creative. Keep low for document generation. |
+
+### Tuning Guide
+
+| Goal | Adjustment |
+|------|------------|
+| More context in responses | Increase `TOP_K` (e.g., 10) and `CHUNK_SIZE` (e.g., 800) |
+| Faster responses | Decrease `TOP_K` (e.g., 3) |
+| Stricter relevance matching | Increase `SIMILARITY_THRESHOLD` (e.g., 0.5) |
+| More results when few match | Decrease `SIMILARITY_THRESHOLD` (e.g., 0.2) |
+| More creative outputs | Increase `TEMPERATURE` (e.g., 0.7) |
+| More factual outputs | Decrease `TEMPERATURE` (e.g., 0.1) |
+| Better quality (higher cost) | Use `gpt-4o` instead of `gpt-4o-mini` |
+
 ---
 
 ## 🚀 Running the Server
