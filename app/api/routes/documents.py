@@ -38,8 +38,8 @@ async def list_documents() -> DocumentListResponse:
     """
     vector_store = get_vector_store()
     
-    # Get all documents from vector store
-    documents = vector_store.get_all_documents()
+    # Get all documents from vector store (async)
+    documents = await vector_store.get_all_documents()
     
     # Convert to response model
     document_infos = [
@@ -59,4 +59,3 @@ async def list_documents() -> DocumentListResponse:
         total_documents=len(document_infos),
         documents=document_infos
     )
-

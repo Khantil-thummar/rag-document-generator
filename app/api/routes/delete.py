@@ -36,8 +36,8 @@ async def delete_document(document_id: str) -> DeleteResponse:
     """
     vector_store = get_vector_store()
     
-    # Check if document exists first
-    documents = vector_store.get_all_documents()
+    # Check if document exists first (async)
+    documents = await vector_store.get_all_documents()
     doc_exists = any(doc["document_id"] == document_id for doc in documents)
     
     if not doc_exists:
@@ -46,12 +46,12 @@ async def delete_document(document_id: str) -> DeleteResponse:
             detail=f"Document with ID '{document_id}' not found"
         )
     
-    # Delete the document
-    success = vector_store.delete_document(document_id)
+    # Delete the document (async)
+    success = await vector_store.delete_document(document_id)
     
     if success:
         return DeleteResponse(
-            message=f"Document successfully deleted",
+            message="Document successfully deleted",
             document_id=document_id,
             success=True
         )
@@ -60,4 +60,3 @@ async def delete_document(document_id: str) -> DeleteResponse:
             status_code=500,
             detail=f"Failed to delete document '{document_id}'"
         )
-

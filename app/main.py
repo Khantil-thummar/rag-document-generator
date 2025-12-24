@@ -3,6 +3,8 @@ RAG Document Generator - FastAPI Application
 
 A backend service that generates new textual documents using existing documents
 as the source of truth. The generated content is grounded, transparent, and explainable.
+
+Production-ready with async support for parallel request processing.
 """
 
 from contextlib import asynccontextmanager
@@ -12,7 +14,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes import api_router
 from app.config import get_settings
-from app.services.vector_store import get_vector_store
+from app.services.vector_store import get_vector_store, close_vector_store
+from app.services.embedding_service import close_embedding_service
+from app.services.llm_service import close_llm_service
 
 
 @asynccontextmanager
@@ -27,7 +31,7 @@ async def lifespan(app: FastAPI):
     # Initialize vector store (ensures collection exists)
     try:
         vector_store = get_vector_store()
-        stats = vector_store.get_collection_stats()
+        stats = await vector_store.get_collection_stats()
         print(f"✅ Qdrant initialized - {stats.get('total_chunks', 0)} chunks in store")
     except Exception as e:
         print(f"⚠️ Warning: Could not initialize Qdrant: {e}")
@@ -39,13 +43,19 @@ async def lifespan(app: FastAPI):
     else:
         print("❌ OpenAI API key not configured!")
     
-    print("✅ Service ready!")
-    print(f"📚 API docs available at /docs")
+    print("✅ Service ready! (Async mode enabled for parallel processing)")
+    print("📚 API docs available at /docs")
     
     yield
     
-    # Shutdown
+    # Shutdown - Clean up async clients
     print("👋 Shutting down RAG Document Generator...")
+    
+    await close_vector_store()
+    await close_embedding_service()
+    await close_llm_service()
+    
+    print("✅ All connections closed")
 
 
 # Create FastAPI application
@@ -59,10 +69,11 @@ The generated content is **grounded**, **transparent**, and **explainable**.
 
 ### Features
 
-- **Document Ingestion**: Upload text documents that become your knowledge base
+- **Document Ingestion**: Upload text, PDF, and DOCX documents
 - **Semantic Search**: Find relevant content using vector similarity
 - **Grounded Generation**: Generate FAQs, summaries, blogs, and reports based on source documents
 - **Source Attribution**: Every generated response includes citations to source documents
+- **Parallel Processing**: Async architecture for handling concurrent requests
 
 ### Transparency
 
@@ -115,4 +126,3 @@ if __name__ == "__main__":
         port=8000,
         reload=True
     )
-

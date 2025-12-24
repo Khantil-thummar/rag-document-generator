@@ -1,20 +1,21 @@
 """
 Embedding service using OpenAI's text-embedding-3-small model.
+Async implementation for production-ready parallel processing.
 """
 
-from openai import OpenAI
+from openai import AsyncOpenAI
 from app.config import get_settings
 
 
 class EmbeddingService:
-    """Service for generating text embeddings using OpenAI."""
+    """Async service for generating text embeddings using OpenAI."""
     
     def __init__(self):
         self.settings = get_settings()
-        self.client = OpenAI(api_key=self.settings.openai_api_key)
+        self.client = AsyncOpenAI(api_key=self.settings.openai_api_key)
         self.model = self.settings.openai_embedding_model
     
-    def get_embedding(self, text: str) -> list[float]:
+    async def get_embedding(self, text: str) -> list[float]:
         """
         Generate embedding for a single text.
         
@@ -29,13 +30,13 @@ class EmbeddingService:
         if not text:
             raise ValueError("Cannot generate embedding for empty text")
         
-        response = self.client.embeddings.create(
+        response = await self.client.embeddings.create(
             model=self.model,
             input=text
         )
         return response.data[0].embedding
     
-    def get_embeddings_batch(self, texts: list[str]) -> list[list[float]]:
+    async def get_embeddings_batch(self, texts: list[str]) -> list[list[float]]:
         """
         Generate embeddings for multiple texts in a single API call.
         More efficient for batch processing.
@@ -56,7 +57,7 @@ class EmbeddingService:
         if not non_empty_texts:
             raise ValueError("All texts are empty")
         
-        response = self.client.embeddings.create(
+        response = await self.client.embeddings.create(
             model=self.model,
             input=non_empty_texts
         )
@@ -67,6 +68,10 @@ class EmbeddingService:
             embeddings[idx] = embedding_data.embedding
         
         return embeddings
+    
+    async def close(self):
+        """Close the async client."""
+        await self.client.close()
 
 
 # Singleton instance
@@ -80,3 +85,10 @@ def get_embedding_service() -> EmbeddingService:
         _embedding_service = EmbeddingService()
     return _embedding_service
 
+
+async def close_embedding_service():
+    """Close the embedding service client."""
+    global _embedding_service
+    if _embedding_service is not None:
+        await _embedding_service.close()
+        _embedding_service = None

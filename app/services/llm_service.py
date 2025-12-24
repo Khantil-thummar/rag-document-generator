@@ -1,10 +1,11 @@
 """
 LLM service for content generation using OpenAI GPT-4o-mini.
+Async implementation for production-ready parallel processing.
 """
 
 import time
 
-from openai import OpenAI
+from openai import AsyncOpenAI
 
 from app.config import get_settings
 from app.services.embedding_service import get_embedding_service
@@ -17,7 +18,7 @@ from app.models.schemas import (
 
 
 class LLMService:
-    """Service for generating content using LLM with RAG."""
+    """Async service for generating content using LLM with RAG."""
     
     # System prompts for different generation types
     GENERATION_PROMPTS = {
@@ -49,7 +50,7 @@ IMPORTANT: Only use information from the provided context. Do not invent or assu
     
     def __init__(self):
         self.settings = get_settings()
-        self.client = OpenAI(api_key=self.settings.openai_api_key)
+        self.client = AsyncOpenAI(api_key=self.settings.openai_api_key)
         self.embedding_service = get_embedding_service()
         self.vector_store = get_vector_store()
     
@@ -110,8 +111,8 @@ IMPORTANT: Only use information from the provided context. Do not invent or assu
         # Determine number of chunks to retrieve
         top_k = request.top_k or self.settings.top_k
         
-        # Generate query embedding
-        query_embedding = self.embedding_service.get_embedding(request.query)
+        # Generate query embedding (async)
+        query_embedding = await self.embedding_service.get_embedding(request.query)
         
         # Extract filters
         document_ids = None
@@ -120,9 +121,9 @@ IMPORTANT: Only use information from the provided context. Do not invent or assu
             document_ids = request.filters.document_ids
             filenames = request.filters.filenames
         
-        # Search for relevant chunks with timing
+        # Search for relevant chunks with timing (async)
         search_start = time.perf_counter()
-        chunks = self.vector_store.search(
+        chunks = await self.vector_store.search(
             query_embedding=query_embedding,
             top_k=top_k,
             score_threshold=self.settings.similarity_threshold,
@@ -171,8 +172,8 @@ INSTRUCTIONS:
 
 Please generate the requested content:"""
         
-        # Call LLM
-        response = self.client.chat.completions.create(
+        # Call LLM (async)
+        response = await self.client.chat.completions.create(
             model=self.settings.openai_llm_model,
             messages=[
                 {"role": "system", "content": system_prompt},
@@ -193,6 +194,10 @@ Please generate the requested content:"""
             db_search_time=db_search_time,
             warning=warning
         )
+    
+    async def close(self):
+        """Close the async client."""
+        await self.client.close()
 
 
 # Singleton instance
@@ -206,3 +211,10 @@ def get_llm_service() -> LLMService:
         _llm_service = LLMService()
     return _llm_service
 
+
+async def close_llm_service():
+    """Close the LLM service client."""
+    global _llm_service
+    if _llm_service is not None:
+        await _llm_service.close()
+        _llm_service = None

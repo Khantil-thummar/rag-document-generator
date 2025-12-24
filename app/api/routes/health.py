@@ -25,17 +25,17 @@ async def health_check() -> HealthResponse:
     settings = get_settings()
     vector_store = get_vector_store()
     
-    # Check Qdrant connection
-    qdrant_connected = vector_store.is_connected()
+    # Check Qdrant connection (async)
+    qdrant_connected = await vector_store.is_connected()
     
     # Check if OpenAI API key is configured
     openai_configured = bool(settings.openai_api_key)
     
-    # Get collection stats
-    stats = vector_store.get_collection_stats()
+    # Get collection stats (async)
+    stats = await vector_store.get_collection_stats()
     
-    # Get document count
-    documents = vector_store.get_all_documents()
+    # Get document count (async)
+    documents = await vector_store.get_all_documents()
     
     # Determine overall status
     if qdrant_connected and openai_configured:
@@ -52,4 +52,3 @@ async def health_check() -> HealthResponse:
         total_documents=len(documents),
         total_chunks=stats.get("total_chunks", 0)
     )
-

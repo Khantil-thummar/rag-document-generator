@@ -1,36 +1,44 @@
 """
 Vector store service using Qdrant with persistent disk storage.
+Async implementation for production-ready parallel processing.
 """
 
 import uuid
-from datetime import datetime
-from qdrant_client import QdrantClient
+from qdrant_client import AsyncQdrantClient
 from qdrant_client.http import models
-from qdrant_client.http.exceptions import UnexpectedResponse
 
 from app.config import get_settings
 
 
 class VectorStoreService:
-    """Service for managing document vectors in Qdrant."""
+    """Async service for managing document vectors in Qdrant."""
     
     def __init__(self):
         self.settings = get_settings()
-        
-        # Initialize Qdrant client with persistent disk storage
-        self.client = QdrantClient(path=self.settings.qdrant_path)
         self.collection_name = self.settings.qdrant_collection_name
-        
-        # Ensure collection exists
-        self._ensure_collection()
+        self._client: AsyncQdrantClient | None = None
+        self._initialized = False
     
-    def _ensure_collection(self) -> None:
+    async def _get_client(self) -> AsyncQdrantClient:
+        """Get or create the async Qdrant client."""
+        if self._client is None:
+            self._client = AsyncQdrantClient(path=self.settings.qdrant_path)
+        
+        if not self._initialized:
+            await self._ensure_collection()
+            self._initialized = True
+        
+        return self._client
+    
+    async def _ensure_collection(self) -> None:
         """Create collection if it doesn't exist."""
-        try:
-            self.client.get_collection(self.collection_name)
-        except (UnexpectedResponse, ValueError):
-            # Collection doesn't exist, create it
-            self.client.create_collection(
+        client = self._client
+        
+        collections = await client.get_collections()
+        collection_names = [c.name for c in collections.collections]
+        
+        if self.collection_name not in collection_names:
+            await client.create_collection(
                 collection_name=self.collection_name,
                 vectors_config=models.VectorParams(
                     size=self.settings.embedding_dimension,
@@ -39,29 +47,31 @@ class VectorStoreService:
             )
             
             # Create payload indices for efficient filtering
-            self.client.create_payload_index(
+            await client.create_payload_index(
                 collection_name=self.collection_name,
                 field_name="document_id",
                 field_schema=models.PayloadSchemaType.KEYWORD
             )
-            self.client.create_payload_index(
+            await client.create_payload_index(
                 collection_name=self.collection_name,
                 field_name="filename",
                 field_schema=models.PayloadSchemaType.KEYWORD
             )
     
-    def is_connected(self) -> bool:
+    async def is_connected(self) -> bool:
         """Check if Qdrant connection is healthy."""
         try:
-            self.client.get_collection(self.collection_name)
+            client = await self._get_client()
+            await client.get_collection(self.collection_name)
             return True
         except Exception:
             return False
     
-    def get_collection_stats(self) -> dict:
+    async def get_collection_stats(self) -> dict:
         """Get collection statistics."""
         try:
-            info = self.client.get_collection(self.collection_name)
+            client = await self._get_client()
+            info = await client.get_collection(self.collection_name)
             return {
                 "total_chunks": info.points_count,
                 "vectors_count": info.vectors_count
@@ -69,7 +79,7 @@ class VectorStoreService:
         except Exception:
             return {"total_chunks": 0, "vectors_count": 0}
     
-    def add_chunks(
+    async def add_chunks(
         self,
         document_id: str,
         filename: str,
@@ -114,14 +124,15 @@ class VectorStoreService:
             )
         
         # Batch upsert for efficiency
-        self.client.upsert(
+        client = await self._get_client()
+        await client.upsert(
             collection_name=self.collection_name,
             points=points
         )
         
         return len(points)
     
-    def search(
+    async def search(
         self,
         query_embedding: list[float],
         top_k: int = 5,
@@ -173,7 +184,8 @@ class VectorStoreService:
             query_filter = models.Filter(must=filter_conditions)
         
         # Perform search
-        results = self.client.search(
+        client = await self._get_client()
+        results = await client.search(
             collection_name=self.collection_name,
             query_vector=query_embedding,
             limit=top_k,
@@ -197,19 +209,21 @@ class VectorStoreService:
         
         return formatted_results
     
-    def get_all_documents(self) -> list[dict]:
+    async def get_all_documents(self) -> list[dict]:
         """
         Get list of all unique documents with metadata.
         
         Returns:
             List of document info dictionaries
         """
+        client = await self._get_client()
+        
         # Scroll through all points to get unique documents
         documents = {}
         offset = None
         
         while True:
-            results, offset = self.client.scroll(
+            results, offset = await client.scroll(
                 collection_name=self.collection_name,
                 limit=100,
                 offset=offset,
@@ -232,9 +246,11 @@ class VectorStoreService:
         
         return list(documents.values())
     
-    def document_exists(self, filename: str) -> bool:
+    async def document_exists(self, filename: str) -> bool:
         """Check if a document with the given filename already exists."""
-        results, _ = self.client.scroll(
+        client = await self._get_client()
+        
+        results, _ = await client.scroll(
             collection_name=self.collection_name,
             scroll_filter=models.Filter(
                 must=[
@@ -250,7 +266,7 @@ class VectorStoreService:
         )
         return len(results) > 0
     
-    def delete_document(self, document_id: str) -> bool:
+    async def delete_document(self, document_id: str) -> bool:
         """
         Delete all chunks belonging to a document.
         
@@ -261,7 +277,8 @@ class VectorStoreService:
             True if deletion was successful
         """
         try:
-            self.client.delete(
+            client = await self._get_client()
+            await client.delete(
                 collection_name=self.collection_name,
                 points_selector=models.FilterSelector(
                     filter=models.Filter(
@@ -277,6 +294,13 @@ class VectorStoreService:
             return True
         except Exception:
             return False
+    
+    async def close(self):
+        """Close the async client."""
+        if self._client is not None:
+            await self._client.close()
+            self._client = None
+            self._initialized = False
 
 
 # Singleton instance
@@ -290,3 +314,10 @@ def get_vector_store() -> VectorStoreService:
         _vector_store = VectorStoreService()
     return _vector_store
 
+
+async def close_vector_store():
+    """Close the vector store client."""
+    global _vector_store
+    if _vector_store is not None:
+        await _vector_store.close()
+        _vector_store = None

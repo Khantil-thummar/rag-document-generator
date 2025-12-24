@@ -1,5 +1,6 @@
 """
 Document processing service for chunking and ingesting documents.
+Async implementation for production-ready parallel processing.
 """
 
 import uuid
@@ -13,7 +14,7 @@ from app.services.vector_store import get_vector_store
 
 
 class DocumentProcessor:
-    """Service for processing and ingesting documents."""
+    """Async service for processing and ingesting documents."""
     
     def __init__(self):
         self.settings = get_settings()
@@ -161,8 +162,8 @@ class DocumentProcessor:
         Returns:
             Dictionary with processing results
         """
-        # Check if document already exists
-        if self.vector_store.document_exists(filename):
+        # Check if document already exists (async)
+        if await self.vector_store.document_exists(filename):
             return {
                 "success": False,
                 "filename": filename,
@@ -173,7 +174,7 @@ class DocumentProcessor:
         document_id = str(uuid.uuid4())
         uploaded_at = datetime.now(timezone.utc).isoformat()
         
-        # Chunk the document
+        # Chunk the document (sync - CPU bound, fast)
         chunks = self._chunk_text(content)
         
         if not chunks:
@@ -183,9 +184,9 @@ class DocumentProcessor:
                 "error": "Document produced no valid chunks"
             }
         
-        # Generate embeddings for all chunks
+        # Generate embeddings for all chunks (async)
         try:
-            embeddings = self.embedding_service.get_embeddings_batch(chunks)
+            embeddings = await self.embedding_service.get_embeddings_batch(chunks)
         except Exception as e:
             return {
                 "success": False,
@@ -208,9 +209,9 @@ class DocumentProcessor:
                 "error": "No valid embeddings generated"
             }
         
-        # Store in vector database
+        # Store in vector database (async)
         try:
-            chunks_added = self.vector_store.add_chunks(
+            chunks_added = await self.vector_store.add_chunks(
                 document_id=document_id,
                 filename=filename,
                 chunks=valid_chunks,
@@ -243,4 +244,3 @@ def get_document_processor() -> DocumentProcessor:
     if _document_processor is None:
         _document_processor = DocumentProcessor()
     return _document_processor
-
