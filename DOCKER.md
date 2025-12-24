@@ -13,7 +13,14 @@ Run the RAG Document Generator using Docker without any local Python setup.
 
 ## Quick Start
 
-### 1. Create Environment File
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd rag-document-generator
+```
+
+### 2. Create Environment File
 
 Create a `.env` file in the project root:
 
@@ -21,13 +28,13 @@ Create a `.env` file in the project root:
 OPENAI_API_KEY=sk-your-openai-api-key-here
 ```
 
-### 2. Build the Docker Image
+### 3. Build the Docker Image
 
 ```bash
 docker build -t rag-document-generator .
 ```
 
-### 3. Run the Container
+### 4. Run the Container
 
 ```bash
 docker run -d \
@@ -45,7 +52,7 @@ docker run -d \
 - `--env-file .env` : Load environment variables from file
 - `-v $(pwd)/qdrant_data:/app/qdrant_data` : Persist Qdrant data to host
 
-### 4. Verify It's Running
+### 5. Verify It's Running
 
 ```bash
 # Check container status
