@@ -1,0 +1,54 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info
+dist
+build
+.eggs
+*.manifest
+*.spec
+.installed.cfg
+
+# Virtual environment
+venv
+.venv
+ENV
+env
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+.cursor
+
+# Environment files (user must provide via --env-file)
+.env
+.env.*
+
+# Qdrant data (will be mounted as volume)
+qdrant_data
+
+# Documentation (not needed in container)
+*.md
+!app/**/*.md
+
+# Test files
+tests
+test
+*.test.py
+*_test.py
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log
+

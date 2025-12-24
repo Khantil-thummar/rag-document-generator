@@ -93,20 +93,10 @@ class SourceDocument(BaseModel):
     reason: str = Field(..., description="Why this source was relevant")
 
 
-class GenerationMetadata(BaseModel):
-    """Metadata about the generation process."""
-    query: str
-    generation_type: str
-    total_sources_used: int
-    average_relevance: float
-    model_used: str
-    generated_at: str
-
-
 class GenerateResponse(BaseModel):
     """Response model for content generation."""
     generated_content: str = Field(..., description="The generated text content")
     sources: list[SourceDocument] = Field(..., description="Source documents used")
-    metadata: GenerationMetadata = Field(..., description="Generation metadata")
+    db_search_time: float = Field(..., description="Time taken for vector DB search in seconds")
     warning: Optional[str] = Field(None, description="Warning if sources are weak or missing")
 

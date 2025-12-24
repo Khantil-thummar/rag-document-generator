@@ -302,17 +302,19 @@ Generate new content (FAQ, summary, blog, report) based on your documents.
             "reason": "Very high semantic similarity (89%) - directly relevant to your query"
         }
     ],
-    "metadata": {
-        "query": "Create a FAQ about the remote work policy",
-        "generation_type": "faq",
-        "total_sources_used": 3,
-        "average_relevance": 0.82,
-        "model_used": "gpt-4o-mini",
-        "generated_at": "2025-12-24T12:00:00Z"
-    },
+    "db_search_time": 0.0452,
     "warning": null
 }
 ```
+
+**Response Fields:**
+
+| Field | Description |
+|-------|-------------|
+| `generated_content` | The AI-generated text based on source documents |
+| `sources` | List of source documents used with relevance scores |
+| `db_search_time` | Time taken for vector DB search (in seconds) |
+| `warning` | Warning message if sources are weak or missing |
 
 ---
 
@@ -566,6 +568,12 @@ Data is stored in `./qdrant_data/` by default. To reset, delete this folder and 
 ### "Unsupported file type"
 
 Only `.txt`, `.pdf`, and `.docx` files are supported. Note that `.doc` (legacy Word format pre-2007) is **not supported**—please convert to `.docx` first.
+
+---
+
+## 🐳 Docker
+
+For running with Docker (no local Python setup required), see **[DOCKER.md](DOCKER.md)**.
 
 ---
 

@@ -1,0 +1,163 @@
+# Docker Setup Guide
+
+Run the RAG Document Generator using Docker without any local Python setup.
+
+---
+
+## Prerequisites
+
+- [Docker](https://docs.docker.com/get-docker/) installed on your system
+- OpenAI API key
+
+---
+
+## Quick Start
+
+### 1. Create Environment File
+
+Create a `.env` file in the project root:
+
+```env
+OPENAI_API_KEY=sk-your-openai-api-key-here
+```
+
+### 2. Build the Docker Image
+
+```bash
+docker build -t rag-document-generator .
+```
+
+### 3. Run the Container
+
+```bash
+docker run -d \
+  --name rag-api \
+  -p 8000:8000 \
+  --env-file .env \
+  -v $(pwd)/qdrant_data:/app/qdrant_data \
+  rag-document-generator
+```
+
+**Flags explained:**
+- `-d` : Run in detached mode (background)
+- `--name rag-api` : Container name for easy reference
+- `-p 8000:8000` : Map port 8000 to host
+- `--env-file .env` : Load environment variables from file
+- `-v $(pwd)/qdrant_data:/app/qdrant_data` : Persist Qdrant data to host
+
+### 4. Verify It's Running
+
+```bash
+# Check container status
+docker ps
+
+# Check health
+curl http://localhost:8000/health
+```
+
+---
+
+## Access Points
+
+| URL | Description |
+|-----|-------------|
+| http://localhost:8000 | API root |
+| http://localhost:8000/docs | Swagger UI |
+| http://localhost:8000/health | Health check |
+
+---
+
+## Container Management
+
+### View Logs
+
+```bash
+docker logs rag-api
+```
+
+### Follow Logs (live)
+
+```bash
+docker logs -f rag-api
+```
+
+### Stop Container
+
+```bash
+docker stop rag-api
+```
+
+### Start Container (after stop)
+
+```bash
+docker start rag-api
+```
+
+### Remove Container
+
+```bash
+docker rm rag-api
+```
+
+### Rebuild (after code changes)
+
+```bash
+docker stop rag-api
+docker rm rag-api
+docker build -t rag-document-generator .
+docker run -d --name rag-api -p 8000:8000 --env-file .env -v $(pwd)/qdrant_data:/app/qdrant_data rag-document-generator
+```
+
+---
+
+## Data Persistence
+
+The Qdrant vector database is stored in the `qdrant_data/` folder on your host machine. This means:
+
+- ✅ Data survives container restarts
+- ✅ Data survives container removal (as long as you don't delete the folder)
+- ✅ You can backup the folder to backup your data
+
+To **reset all data**, simply delete the `qdrant_data/` folder:
+
+```bash
+rm -rf qdrant_data/
+```
+
+---
+
+## Troubleshooting
+
+### Container won't start
+
+Check logs for errors:
+
+```bash
+docker logs rag-api
+```
+
+### "OPENAI_API_KEY not configured"
+
+Ensure your `.env` file exists and contains a valid API key:
+
+```bash
+cat .env
+# Should show: OPENAI_API_KEY=sk-...
+```
+
+### Port already in use
+
+Change the host port:
+
+```bash
+docker run -d --name rag-api -p 9000:8000 --env-file .env -v $(pwd)/qdrant_data:/app/qdrant_data rag-document-generator
+```
+
+Then access at `http://localhost:9000`
+
+---
+
+## Next Steps
+
+For API usage, sample curl commands, and endpoint documentation, see the main **[README.md](README.md)**.
+

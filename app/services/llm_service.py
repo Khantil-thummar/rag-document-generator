@@ -2,7 +2,7 @@
 LLM service for content generation using OpenAI GPT-4o-mini.
 """
 
-from datetime import datetime, timezone
+import time
 
 from openai import OpenAI
 
@@ -13,7 +13,6 @@ from app.models.schemas import (
     GenerateRequest,
     GenerateResponse,
     SourceDocument,
-    GenerationMetadata
 )
 
 
@@ -121,7 +120,8 @@ IMPORTANT: Only use information from the provided context. Do not invent or assu
             document_ids = request.filters.document_ids
             filenames = request.filters.filenames
         
-        # Search for relevant chunks
+        # Search for relevant chunks with timing
+        search_start = time.perf_counter()
         chunks = self.vector_store.search(
             query_embedding=query_embedding,
             top_k=top_k,
@@ -129,6 +129,7 @@ IMPORTANT: Only use information from the provided context. Do not invent or assu
             document_ids=document_ids,
             filenames=filenames
         )
+        db_search_time = round(time.perf_counter() - search_start, 4)
         
         # Handle case with no or weak sources
         warning = None
@@ -137,14 +138,7 @@ IMPORTANT: Only use information from the provided context. Do not invent or assu
             return GenerateResponse(
                 generated_content="I cannot generate this content because no relevant source documents were found in the knowledge base. Please ensure relevant documents have been uploaded, or try rephrasing your query.",
                 sources=[],
-                metadata=GenerationMetadata(
-                    query=request.query,
-                    generation_type=request.generation_type or "general",
-                    total_sources_used=0,
-                    average_relevance=0.0,
-                    model_used=self.settings.openai_llm_model,
-                    generated_at=datetime.now(timezone.utc).isoformat()
-                ),
+                db_search_time=db_search_time,
                 warning=warning
             )
         
@@ -193,20 +187,10 @@ Please generate the requested content:"""
         # Create source documents
         sources = self._create_source_documents(chunks)
         
-        # Create metadata
-        metadata = GenerationMetadata(
-            query=request.query,
-            generation_type=generation_type,
-            total_sources_used=len(chunks),
-            average_relevance=round(avg_score, 4),
-            model_used=self.settings.openai_llm_model,
-            generated_at=datetime.now(timezone.utc).isoformat()
-        )
-        
         return GenerateResponse(
             generated_content=generated_content,
             sources=sources,
-            metadata=metadata,
+            db_search_time=db_search_time,
             warning=warning
         )
 
