@@ -67,6 +67,8 @@ When generating content, you can filter which documents to search:
 
 ## 🛠️ Setup and Installation
 
+For running with Docker (no local Python setup required), see **[DOCKER.md](DOCKER.md)**.
+
 ### Prerequisites
 
 - Python 3.11 or higher (recommended: 3.11.x or 3.12.x)
@@ -568,12 +570,6 @@ Data is stored in `./qdrant_data/` by default. To reset, delete this folder and 
 ### "Unsupported file type"
 
 Only `.txt`, `.pdf`, and `.docx` files are supported. Note that `.doc` (legacy Word format pre-2007) is **not supported**—please convert to `.docx` first.
-
----
-
-## 🐳 Docker
-
-For running with Docker (no local Python setup required), see **[DOCKER.md](DOCKER.md)**.
 
 ---
 
