@@ -143,7 +143,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 | Endpoint | Method | Description |
 |----------|--------|-------------|
 | `/health` | GET | Health check and system status |
-| `/upload` | POST | Upload one or more .txt documents |
+| `/upload` | POST | Upload documents (.txt, .pdf, .docx) |
 | `/documents` | GET | List all uploaded documents |
 | `/documents/{document_id}` | DELETE | Delete a specific document |
 | `/generate` | POST | Generate new content from documents |
@@ -173,16 +173,20 @@ Check the service status, Qdrant connection, and document statistics.
 
 **Endpoint:** `POST /upload`
 
-Upload one or more `.txt` files to the knowledge base. Files are automatically chunked, embedded, and stored in Qdrant.
+Upload one or more documents to the knowledge base. Text is automatically extracted (for PDF/DOCX), chunked, embedded, and stored in Qdrant.
+
+**Supported Formats:** `.txt`, `.pdf`, `.docx`
+
+> ⚠️ **Note:** Only `.docx` (modern Word format) is supported, not `.doc` (legacy format).
 
 **Request:** Multipart form data with file(s)
 
 **Response:**
 ```json
 {
-    "message": "Successfully uploaded 2 document(s)",
-    "total_files": 2,
-    "successful_uploads": 2,
+    "message": "Successfully uploaded 3 document(s)",
+    "total_files": 3,
+    "successful_uploads": 3,
     "failed_uploads": 0,
     "files": [
         {
@@ -192,9 +196,15 @@ Upload one or more `.txt` files to the knowledge base. Files are automatically c
             "status": "success"
         },
         {
-            "filename": "leave_policy.txt",
-            "document_id": "xyz789-...",
-            "chunks_created": 12,
+            "filename": "annual_report.pdf",
+            "document_id": "pdf789-...",
+            "chunks_created": 15,
+            "status": "success"
+        },
+        {
+            "filename": "handbook.docx",
+            "document_id": "docx012-...",
+            "chunks_created": 10,
             "status": "success"
         }
     ]
@@ -325,13 +335,13 @@ curl -X POST "http://localhost:8000/upload" \
 
 ---
 
-### 3. Upload Multiple Documents
+### 3. Upload Multiple Documents (Mixed Formats)
 
 ```bash
 curl -X POST "http://localhost:8000/upload" \
   -F "files=@new_documents/remote_work_policy.txt" \
-  -F "files=@new_documents/leave_policy.txt" \
-  -F "files=@new_documents/benefits_overview.txt"
+  -F "files=@reports/annual_report.pdf" \
+  -F "files=@docs/employee_handbook.docx"
 ```
 
 ---
@@ -498,6 +508,7 @@ rag-document-generator/
 │       ├── embedding_service.py   # OpenAI embeddings
 │       ├── vector_store.py        # Qdrant operations
 │       ├── document_processor.py  # Chunking and ingestion
+│       ├── file_parser.py         # Text extraction (TXT/PDF/DOCX)
 │       └── llm_service.py         # Content generation
 ├── new_documents/                 # Sample documents
 ├── qdrant_data/                   # Qdrant persistent storage (auto-created)
@@ -551,6 +562,10 @@ Delete the existing document first using `DELETE /documents/{document_id}`, then
 ### Qdrant data persistence
 
 Data is stored in `./qdrant_data/` by default. To reset, delete this folder and restart the server.
+
+### "Unsupported file type"
+
+Only `.txt`, `.pdf`, and `.docx` files are supported. Note that `.doc` (legacy Word format pre-2007) is **not supported**—please convert to `.docx` first.
 
 ---
 

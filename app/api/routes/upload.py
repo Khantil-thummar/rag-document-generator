@@ -7,35 +7,43 @@ from typing import Annotated
 
 from app.models.schemas import DocumentUploadResponse, UploadedFileInfo
 from app.services.document_processor import get_document_processor
+from app.services.file_parser import (
+    is_supported_file,
+    extract_text,
+    SUPPORTED_EXTENSIONS
+)
 
 router = APIRouter()
 
 
 @router.post("/upload", response_model=DocumentUploadResponse)
 async def upload_documents(
-    files: Annotated[list[UploadFile], File(description="One or more .txt files to upload")]
+    files: Annotated[list[UploadFile], File(description="One or more documents to upload (.txt, .pdf, .docx)")]
 ) -> DocumentUploadResponse:
     """
-    Upload one or more text documents.
+    Upload one or more documents to the knowledge base.
     
     The documents will be:
-    1. Chunked into smaller pieces for better retrieval
-    2. Embedded using OpenAI's text-embedding-3-small model
-    3. Stored in Qdrant vector database with metadata
+    1. Text extracted (for PDF/DOCX)
+    2. Chunked into smaller pieces for better retrieval
+    3. Embedded using OpenAI's text-embedding-3-small model
+    4. Stored in Qdrant vector database with metadata
     
-    Supported format: .txt files only
+    **Supported formats:** `.txt`, `.pdf`, `.docx`
     
     **Example using curl:**
     ```
     curl -X POST "http://localhost:8000/upload" \\
-      -F "files=@document1.txt" \\
-      -F "files=@document2.txt"
+      -F "files=@document.txt" \\
+      -F "files=@report.pdf" \\
+      -F "files=@policy.docx"
     ```
     """
     if not files:
         raise HTTPException(status_code=400, detail="No files provided")
     
     document_processor = get_document_processor()
+    supported_formats = ", ".join(SUPPORTED_EXTENSIONS)
     
     uploaded_files = []
     successful = 0
@@ -43,12 +51,12 @@ async def upload_documents(
     
     for file in files:
         # Validate file type
-        if not file.filename or not file.filename.endswith(".txt"):
+        if not file.filename or not is_supported_file(file.filename):
             uploaded_files.append(UploadedFileInfo(
                 filename=file.filename or "unknown",
                 document_id="",
                 chunks_created=0,
-                status=f"failed: Only .txt files are supported"
+                status=f"failed: Unsupported file type. Supported: {supported_formats}"
             ))
             failed += 1
             continue
@@ -56,16 +64,6 @@ async def upload_documents(
         # Read file content
         try:
             content = await file.read()
-            text_content = content.decode("utf-8")
-        except UnicodeDecodeError:
-            uploaded_files.append(UploadedFileInfo(
-                filename=file.filename,
-                document_id="",
-                chunks_created=0,
-                status="failed: File is not valid UTF-8 text"
-            ))
-            failed += 1
-            continue
         except Exception as e:
             uploaded_files.append(UploadedFileInfo(
                 filename=file.filename,
@@ -76,13 +74,35 @@ async def upload_documents(
             failed += 1
             continue
         
+        # Extract text from file
+        try:
+            text_content = extract_text(file.filename, content)
+        except ValueError as e:
+            uploaded_files.append(UploadedFileInfo(
+                filename=file.filename,
+                document_id="",
+                chunks_created=0,
+                status=f"failed: {str(e)}"
+            ))
+            failed += 1
+            continue
+        except Exception as e:
+            uploaded_files.append(UploadedFileInfo(
+                filename=file.filename,
+                document_id="",
+                chunks_created=0,
+                status=f"failed: Could not extract text - {str(e)}"
+            ))
+            failed += 1
+            continue
+        
         # Check if content is empty
         if not text_content.strip():
             uploaded_files.append(UploadedFileInfo(
                 filename=file.filename,
                 document_id="",
                 chunks_created=0,
-                status="failed: File is empty"
+                status="failed: No text content found in file"
             ))
             failed += 1
             continue
