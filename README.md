@@ -181,6 +181,24 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 ---
 
+## 🖥️ Testing with UI
+
+A simple web UI is included to test all API endpoints without using cURL or Postman.
+
+### How to Use
+
+1. **Start the server** (see above)
+2. **Open `index.html`** in your browser by double-clicking the file in your file manager
+3. **Test all features:**
+   - Upload documents (drag & drop or click to browse)
+   - View uploaded documents
+   - Delete documents
+   - Generate content with different types and filters
+
+The UI connects to `http://localhost:8000` automatically.
+
+---
+
 ## 📡 API Endpoints
 
 ### Overview
@@ -559,8 +577,12 @@ rag-document-generator/
 │       └── llm_service.py         # Content generation
 ├── new_documents/                 # Sample documents
 ├── qdrant_data/                   # Qdrant persistent storage (auto-created)
+├── index.html                     # Web UI for testing APIs
 ├── .env                           # Environment variables
 ├── requirements.txt               # Python dependencies
+├── Dockerfile                     # Docker configuration
+├── DOCKER.md                      # Docker setup guide
+├── DESIGN.md                      # Design decisions document
 └── README.md                      # This file
 ```
 

@@ -625,6 +625,10 @@
                 const res = await fetch(`${API_BASE}/documents`);
                 const data = await res.json();
 
+                if (!res.ok) {
+                    throw new Error(data.detail || 'Failed to load documents');
+                }
+
                 if (data.documents.length === 0) {
                     container.innerHTML = '<div class="empty-state">No documents yet</div>';
                     return;

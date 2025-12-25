@@ -74,6 +74,23 @@ curl http://localhost:8000/health
 
 ---
 
+## Testing with UI
+
+A simple web UI is included to test all API endpoints visually.
+
+### How to Use
+
+1. **Start the container** (see Quick Start above)
+2. **Open `index.html`** in your browser by double-clicking the file in your file manager
+3. **Test all features:**
+   - Upload documents (drag & drop supported)
+   - View and delete documents
+   - Generate content (FAQ, summary, blog, report)
+
+The UI connects to `http://localhost:8000` automatically. No additional setup required.
+
+---
+
 ## Container Management
 
 ### View Logs
